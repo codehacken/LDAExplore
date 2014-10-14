@@ -34,6 +34,7 @@ n_top_words = 8
 for i, topic_dist in enumerate(topic_word):
 	topic_words = np.array(vocab)[np.argsort(topic_dist)][:-n_top_words:-1]
 	print('Topic {}: {}'.format(i, ' '.join(topic_words)))
+
 Topic 0: church people told years last year time
 Topic 1: elvis music fans york show concert king
 Topic 2: pope trip mass vatican poland health john
@@ -62,6 +63,7 @@ The document-topic distributions are available in model.doc_topic_.
 doc_topic = model.doc_topic_
 for i in range(10):
 	print("{} (top topic: {})".format(titles[i], doc_topic[i].argmax()))
+
 0 UK: Prince Charles spearheads British royal revolution. LONDON 1996-08-20 (top topic: 11)
 1 GERMANY: Historic Dresden church rising from WW2 ashes. DRESDEN, Germany 1996-08-21 (top topic: 0)
 2 INDIA: Mother Teresa's condition said still unstable. CALCUTTA 1996-08-23 (top topic: 15)
