@@ -18,21 +18,21 @@ STEPS:
 EXAMPLE
 =======
 
->>> import numpy as np
->>> import lda
->>> import lda.datasets
->>> X = lda.datasets.load_reuters()
->>> vocab = lda.datasets.load_reuters_vocab()
->>> titles = lda.datasets.load_reuters_titles()
->>> X.shape
+import numpy as np
+import lda
+import lda.datasets
+X = lda.datasets.load_reuters()
+vocab = lda.datasets.load_reuters_vocab()
+titles = lda.datasets.load_reuters_titles()
+X.shape
 (395, 4258)
->>> model = lda.LDA(n_topics=20, n_iter=500, random_state=1)
->>> model.fit(X)  # model.fit_transform(X) is also available
->>> topic_word = model.topic_word_  # model.components_ also works
->>> n_top_words = 8
->>> for i, topic_dist in enumerate(topic_word):
-...     topic_words = np.array(vocab)[np.argsort(topic_dist)][:-n_top_words:-1]
-...     print('Topic {}: {}'.format(i, ' '.join(topic_words)))
+model = lda.LDA(n_topics=20, n_iter=500, random_state=1)
+model.fit(X)  # model.fit_transform(X) is also available
+topic_word = model.topic_word_  # model.components_ also works
+n_top_words = 8
+for i, topic_dist in enumerate(topic_word):
+	topic_words = np.array(vocab)[np.argsort(topic_dist)][:-n_top_words:-1]
+	print('Topic {}: {}'.format(i, ' '.join(topic_words)))
 Topic 0: church people told years last year time
 Topic 1: elvis music fans york show concert king
 Topic 2: pope trip mass vatican poland health john
@@ -56,9 +56,9 @@ Topic 19: art exhibition century city tour works madonna
 
 The document-topic distributions are available in model.doc_topic_.
 
->>> doc_topic = model.doc_topic_
->>> for i in range(10):
-...     print("{} (top topic: {})".format(titles[i], doc_topic[i].argmax()))
+doc_topic = model.doc_topic_
+for i in range(10):
+	print("{} (top topic: {})".format(titles[i], doc_topic[i].argmax()))
 0 UK: Prince Charles spearheads British royal revolution. LONDON 1996-08-20 (top topic: 11)
 1 GERMANY: Historic Dresden church rising from WW2 ashes. DRESDEN, Germany 1996-08-21 (top topic: 0)
 2 INDIA: Mother Teresa's condition said still unstable. CALCUTTA 1996-08-23 (top topic: 15)
