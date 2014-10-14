@@ -18,6 +18,7 @@ STEPS:
 EXAMPLE
 =======
 
+```python
 import numpy as np
 import lda
 import lda.datasets
@@ -53,9 +54,11 @@ Topic 16: bernardin cardinal cancer church life catholic chicago
 Topic 17: died funeral church city death buddhist israel
 Topic 18: museum kennedy cultural city culture greek byzantine
 Topic 19: art exhibition century city tour works madonna
+```
 
 The document-topic distributions are available in model.doc_topic_.
 
+```python
 doc_topic = model.doc_topic_
 for i in range(10):
 	print("{} (top topic: {})".format(titles[i], doc_topic[i].argmax()))
@@ -69,6 +72,7 @@ for i in range(10):
 7 INDIA: Mother Teresa's condition improves, many pray. CALCUTTA, India 1996-08-25 (top topic: 15)
 8 INDIA: Mother Teresa improves, nuns pray for "miracle". CALCUTTA 1996-08-26 (top topic: 15)
 9 UK: Charles under fire over prospect of Queen Camilla. LONDON 1996-08-26 (top topic: 0)
+```
 
 (SOURCE: From the documentation, so we dont have to go it again.)
 
