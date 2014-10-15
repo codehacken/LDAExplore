@@ -86,7 +86,7 @@ The Reuters 20 newsgroup data set has been added to the repository.
 PAPERS
 ======
 
-```
+```latex
 1. Latent Dirchlet Allocation
    Blei, David M., Andrew Y. Ng, and Michael I. Jordan. "Latent dirichlet allocation." the Journal of machine Learning research 3 (2003): 993-1022.
 
