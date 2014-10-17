@@ -4,7 +4,7 @@ Basic LDA module that is used in the project.
 """
 
 from gensim import corpora, models, similarities
-from itertools import chain
+#from itertools import chain
 
 class LDAVisualModel:
     def __init__(self, word_corpus):
