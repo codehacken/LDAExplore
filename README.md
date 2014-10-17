@@ -6,7 +6,7 @@ The project uses the lda library from python which implements Latent Dirichlet A
 
 DOCUMENTATION
 =============
-https://pypi.python.org/pypi/lda
+http://radimrehurek.com/gensim/
 
 INSTALLATION
 ============
