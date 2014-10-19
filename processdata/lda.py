@@ -37,7 +37,7 @@ class LDAVisualModel:
         :param num_pass: The number of passes that LDA executes on the data.
         """
         self.lda = models.LdaModel(corpus=self.mm, id2word=self.id2word, num_topics=num_top,
-                                       update_every=update_t, chunksize=chunks, passes=num_pass)
+                                   update_every=update_t, chunksize=chunks, passes=num_pass)
 
     def get_lda_corpus(self):
         """
