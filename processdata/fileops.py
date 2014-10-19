@@ -58,8 +58,8 @@ def read_dir(file_dir_name):
     """
     token_list = []
     files = glob.glob(file_dir_name)
-    for file in files:
-        tokens = read_file(file_dir_name + "/" + file)
+    for file_name in files:
+        tokens = read_file(file_dir_name + "/" + file_name)
         token_list.append(tokens)
 
     return token_list

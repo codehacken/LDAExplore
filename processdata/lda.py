@@ -31,11 +31,10 @@ class LDAVisualModel:
 
     def train_lda(self, num_top=2, update_t=1, chunks=10000, num_pass=1):
         """
-        This function trains the LDA model.
-        :param num_topics: The number of topics for which LDA trains.
-        :param update_time:
-        :param chunksize:
-        :param passes: The number of passes that LDA executes on the data.
+        :param num_top: The number of topics for which LDA trains.
+        :param update_t:
+        :param chunks:
+        :param num_pass: The number of passes that LDA executes on the data.
         """
         self.lda = models.LdaModel(corpus=self.mm, id2word=self.id2word, num_topics=num_top,
                                        update_every=update_t, chunksize=chunks, passes=num_pass)
