@@ -1,4 +1,6 @@
-__author__ = 'ashwin'
+__author__ = 'Ashwin'
+__email__ = 'gashwin1@umbc.edu'
+
 """
 Basic LDA module that is used in the project.
 """

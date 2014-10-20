@@ -1,4 +1,7 @@
 #!/usr/bin/python
+__author__ = 'Ashwin'
+__email__ = 'gashwin1@umbc.edu'
+
 """
 CMSC 691 - Final Project
 Visualizing Topics using LDA

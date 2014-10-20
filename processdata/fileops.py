@@ -1,4 +1,6 @@
-__author__ = 'ashwin'
+__author__ = 'Ashwin'
+__email__ = 'gashwin1@umbc.edu'
+
 """
 Perform basic file operations that can be used to feed the corpus into
 other models such as LDA.
