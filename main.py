@@ -23,10 +23,10 @@ from processdata import fileops
 from processdata.lda import LDAVisualModel
 
 if __name__ == "__main__":
-    word_corpus = fileops.read_file('20_newsgroups/alt.atheism/53350')
+    word_corpus = fileops.read_dir('20_newsgroups/alt.atheism/')
     lda = LDAVisualModel([word_corpus])
     lda.create_word_corpus([word_corpus])
-    lda.train_lda(3)
+    lda.train_lda(20)
     topics = lda.get_lda_corpus()
 
     print topics

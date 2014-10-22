@@ -34,7 +34,6 @@ def read_file(filename):
     file_text = file_handle.read()
 
     # file_text contains the whole file.
-
     # This is used because the current file contents are not large
     # although the number of files are large in number.
 
@@ -59,9 +58,10 @@ def read_dir(file_dir_name):
     :return: token_list[tokens[]]
     """
     token_list = []
-    files = glob.glob(file_dir_name)
+    files = glob.glob(file_dir_name+"/*")
     for file_name in files:
-        tokens = read_file(file_dir_name + "/" + file_name)
+        print file_name
+        tokens = read_file(file_name)
         token_list.append(tokens)
 
     return token_list

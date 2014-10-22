@@ -4,7 +4,7 @@ __email__ = 'gashwin1@umbc.edu'
 """
 Basic LDA module that is used in the project.
 """
-
+import re
 from gensim import corpora, models, similarities
 #from itertools import chain
 
@@ -49,7 +49,8 @@ class LDAVisualModel:
         topics = []
         if self.lda:
             for topic in self.lda.print_topics():
-                topics.append(topic)
+                regex = re.findall(r'(0\.[0-9]*)\*([a-z]*)', topic, re.M | re.I)
+                topics.append(regex)
 
         return topics
 
