@@ -40,6 +40,9 @@ print "NOW LDAing...."
 
 # Create Dictionary.
 id2word = corpora.Dictionary(texts)
+print "Dictionary"
+print id2word
+
 # Creates the Bag of Word corpus.
 mm = [id2word.doc2bow(text) for text in texts]
 

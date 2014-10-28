@@ -6,6 +6,7 @@ Basic LDA module that is used in the project.
 """
 import re
 from gensim import corpora, models, similarities
+
 #from itertools import chain
 
 
@@ -30,7 +31,7 @@ class LDAVisualModel:
             self.mm.append(self.id2word.doc2bow(text))
 
         if store_corpus:
-            corpora.MmCorpus.serialize(store_loc, corpus)
+            corpora.MmCorpus.serialize(store_loc, word_corpus)
 
     def train_lda(self, num_top=2, update_t=1, chunks=10000, num_pass=1):
         """

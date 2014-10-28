@@ -19,15 +19,19 @@ This project tries to visualize the topics, the documents and the clusters
 that are generated.
 """
 
-from processdata import fileops
+from processdata.fileops import FileReader
 from processdata.lda import LDAVisualModel
 
 if __name__ == "__main__":
-    word_corpus = fileops.read_dir('20_newsgroups/alt.atheism/')
-    lda = LDAVisualModel([word_corpus])
-    lda.create_word_corpus([word_corpus])
+    # Read the directory
+    reader = FileReader()
+    reader.read_dir('20_newsgroups/alt.temp/')
+
+    # Get the token list
+    word_corpus = reader.get_token_list()
+
+    # Perform LDA.
+    lda = LDAVisualModel(word_corpus)
+    lda.create_word_corpus(word_corpus)
     lda.train_lda(20)
     topics = lda.get_lda_corpus()
-
-    print topics
-
