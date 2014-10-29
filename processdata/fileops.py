@@ -68,8 +68,15 @@ class FileReader:
 
         files = glob.glob(file_dir_name+"/*")
         for file_name in files:
-            print file_name
             self.read_file(file_name)
 
     def get_token_list(self):
         return self.token_list
+
+
+"""
+This function is to write to JSON file.
+
+def write_file(data, filename):
+
+"""

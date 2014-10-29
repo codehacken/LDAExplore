@@ -35,3 +35,4 @@ if __name__ == "__main__":
     lda.create_word_corpus(word_corpus)
     lda.train_lda(20)
     topics = lda.get_lda_corpus()
+    print len(topics)
