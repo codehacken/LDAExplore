@@ -21,6 +21,7 @@ that are generated.
 
 from processdata.fileops import FileReader
 from processdata.lda import LDAVisualModel
+from processdata.fileops import write_file
 
 if __name__ == "__main__":
     # Read the directory
@@ -33,6 +34,8 @@ if __name__ == "__main__":
     # Perform LDA.
     lda = LDAVisualModel(word_corpus)
     lda.create_word_corpus(word_corpus)
-    lda.train_lda(20)
+    lda.train_lda(10)
     topics = lda.get_lda_corpus()
-    print len(topics)
+
+    # Print the topic information to a file.
+    write_file(topics, lda, "server/data/data.csv")

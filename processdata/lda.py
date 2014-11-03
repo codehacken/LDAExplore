@@ -5,9 +5,7 @@ __email__ = 'gashwin1@umbc.edu'
 Basic LDA module that is used in the project.
 """
 import re
-from gensim import corpora, models, similarities
-
-#from itertools import chain
+from gensim import corpora, models
 
 
 class LDAVisualModel:
@@ -54,4 +52,22 @@ class LDAVisualModel:
                 topics.append(regex)
 
         return topics
+
+    def get_lda_obj(self):
+        """
+        :return: lda object in self.lda
+        """
+        return self.lda
+
+    def get_mm(self):
+        """
+        :return: The mm object from self.mm
+        """
+        return self.mm
+
+    def get_id2word(self):
+        """
+        :return: The corpus dictionary object.
+        """
+        return self.id2word
 

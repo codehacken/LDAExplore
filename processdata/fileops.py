@@ -75,8 +75,32 @@ class FileReader:
 
 
 """
-This function is to write to JSON file.
-
-def write_file(data, filename):
-
+This function is to write to CSV file.
 """
+
+def write_file(word_corpus, lda_vis_model, filename):
+    # Find the number of topics.
+    num_topics = lda_vis_model.get_lda_obj().num_topics
+
+    # Build the topic - document matrix.
+    doc_top = []
+    for idx, doc in enumerate(lda_vis_model.get_lda_obj()[lda_vis_model.get_mm()]):
+        doc_top.append([0] * num_topics)
+        for topic in doc:
+            doc_top[idx][topic[0]] = topic[1]
+
+    # Write the headers for the columns to the CSV.
+    col_string = "name,group,"
+    for i in range(0, num_topics - 1):
+        col_string += "Topic " + str(i) + ","
+    col_string += "Topic " + str(i+1) + "\n"
+
+    # Write the document information to the CSV file.
+    for idx, doc in enumerate(doc_top):
+        col_string += "D" + str(idx) + ",D" + str(idx)
+        for topic in doc:
+            col_string += "," + str(topic)
+        col_string += "\n"
+
+    with open(filename, "w") as file_handle:
+        file_handle.write(col_string)
