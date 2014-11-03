@@ -92,8 +92,8 @@ def write_file(word_corpus, lda_vis_model, filename):
     # Write the headers for the columns to the CSV.
     col_string = "name,group,"
     for i in range(0, num_topics - 1):
-        col_string += "Topic " + str(i) + ","
-    col_string += "Topic " + str(i+1) + "\n"
+        col_string += "T " + str(i) + ","
+    col_string += "T " + str(i+1) + "\n"
 
     # Write the document information to the CSV file.
     for idx, doc in enumerate(doc_top):

@@ -34,7 +34,7 @@ if __name__ == "__main__":
     # Perform LDA.
     lda = LDAVisualModel(word_corpus)
     lda.create_word_corpus(word_corpus)
-    lda.train_lda(10)
+    lda.train_lda(30)
     topics = lda.get_lda_corpus()
 
     # Print the topic information to a file.
