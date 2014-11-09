@@ -1,152 +1,79 @@
-<!doctype html>
-<title>Linking to SlickGrid</title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>LDA Explorer</title>
+    <link rel="stylesheet" type="text/css" href="css/parallel.css" />
+  </head>
+  <body>
+  <div id="header">
+    <h1>LDA Explorer</h1>
+    <button title="Zoom in on selected data" id="keep-data" disabled="disabled">Keep</button>
+    <button title="Remove selected data" id="exclude-data" disabled="disabled">Exclude</button>
+    <button title="Export data as CSV" id="export-data">Export</button>
+    <div class="controls">
+      <strong id="rendered-count"></strong>/<strong id="selected-count"></strong><!--<strong id="data-count"></strong>-->
+      <div class="fillbar"><div id="selected-bar"><div id="rendered-bar">&nbsp;</div></div></div>
+      Lines at <strong id="opacity"></strong> opacity.
+      <span class="settings">
+        <button id="hide-ticks">Hide Ticks</button>
+        <button id="show-ticks" disabled="disabled">Show Ticks</button>
+        <button id="dark-theme">Dark</button>
+        <button id="light-theme" disabled="disabled">Light</button>
+      </span>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+  <div id="chart">
+    <canvas id="background"></canvas>
+    <canvas id="foreground"></canvas>
+    <canvas id="highlight"></canvas>
+    <svg></svg>
+  </div>
+  <div id="wrap">
+    <div class="third" id="controls">
+      <div class="bright">
+        <h3>What is this?</h3>
+        <p>
+          A multidimensional explorer of Topic Models results of LDA.</a>.
+        </p>
+        <p>
+          The parallel coordinates displays each topic discovered by the output of the corpus of ducments pass into LDA. 
+        </p>
+      </div>
 
-<!-- SlickGrid -->
-<link rel="stylesheet" href="lib/slickgrid/slick.grid.css" type="text/css"/>
-<link rel="stylesheet" href="lib/slickgrid/jquery-ui-1.8.16.custom.css" type="text/css"/>
-<link rel="stylesheet" href="lib/slickgrid/examples.css" type="text/css"/>
-<link rel="stylesheet" href="lib/slickgrid/slick.pager.css" type="text/css"/>
-<script src="lib/slickgrid/jquery-1.7.min.js"></script>
-<script src="lib/slickgrid/jquery.event.drag-2.0.min.js"></script>
-<script src="lib/slickgrid/slick.core.js"></script>
-<script src="lib/slickgrid/slick.grid.js"></script>
-<script src="lib/slickgrid/slick.pager.js"></script>
-<script src="lib/slickgrid/slick.dataview.js"></script>
-<!-- End SlickGrid -->
+      <div class="little-box">
+        <h3>Controls</h3>
+        <p>
+          <strong>Brush</strong>: Drag vertically along an axis.<br/>
+          <strong>Remove Brush</strong>: Tap the axis background.<br/>
+          <strong>Reorder Axes</strong>: Drag a label horizontally.<br/>
+          <strong>Invert Axis</strong>: Tap an axis label.<br/>
+          <strong>Remove Axis</strong>: Drag axis label to the left edge.<br/>
+        </p>
+      </div>
+      <div class="little-box">
 
-<link rel="stylesheet" type="text/css" href="d3.parcoords.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-<style>
-body, html {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  font-size: 12px;
-}
-#grid, #pager {
-  position: fixed;
-  width: 100%;
-}
-#grid {
-  bottom: 0;
-  height: 300px;
-}
-#pager {
-  bottom: 306px;
-  height: 20px;
-}
-.slick-row:hover {
-  font-weight: bold;
-  color: #069;
-}
-</style>
-<script src="lib/d3.min.js"></script>
-<script src="d3.parcoords.js"></script>
-<script src="lib/divgrid.js"></script>
-<div id="example" class="parcoords" style="height:240px;"></div>
-<div id="grid"></div>
-<div id="pager"></div>
-<script id="brushing">
-var parcoords = d3.parcoords()("#example")
-    .alpha(0.4)
-    .mode("queue") // progressive rendering
-    .height(d3.max([document.body.clientHeight-326, 220]))
-    .margin({
-      top: 36,
-      left: 0,
-      right: 0,
-      bottom: 16
-    });
-
-// load csv file and create the chart
-//d3.csv('data/nutrients.csv', function(data) {
-d3.csv('data/data.csv', function(data) {
-  // slickgrid needs each data element to have an id
-  data.forEach(function(d,i) { d.id = d.id || i; });
-
-  parcoords
-    .data(data)
-    .render()
-    .reorderable()
-    .brushMode("1D-axes");
-
-  // setting up grid
-  var column_keys = d3.keys(data[0]);
-  var columns = column_keys.map(function(key,i) {
-    return {
-      id: key,
-      name: key,
-      field: key,
-      sortable: true
-    }
-  });
-
-  var options = {
-    enableCellNavigation: true,
-    enableColumnReorder: false,
-    multiColumnSort: false
-  };
-
-  var dataView = new Slick.Data.DataView();
-  var grid = new Slick.Grid("#grid", dataView, columns, options);
-  var pager = new Slick.Controls.Pager(dataView, grid, $("#pager"));
-
-  // wire up model events to drive the grid
-  dataView.onRowCountChanged.subscribe(function (e, args) {
-    grid.updateRowCount();
-    grid.render();
-  });
-
-  dataView.onRowsChanged.subscribe(function (e, args) {
-    grid.invalidateRows(args.rows);
-    grid.render();
-  });
-
-  // column sorting
-  var sortcol = column_keys[0];
-  var sortdir = 1;
-
-  function comparer(a, b) {
-    var x = a[sortcol], y = b[sortcol];
-    return (x == y ? 0 : (x > y ? 1 : -1));
-  }
-  
-  // click header to sort grid column
-  grid.onSort.subscribe(function (e, args) {
-    sortdir = args.sortAsc ? 1 : -1;
-    sortcol = args.sortCol.field;
-
-    if ($.browser.msie && $.browser.version <= 8) {
-      dataView.fastSort(sortcol, args.sortAsc);
-    } else {
-      dataView.sort(comparer, args.sortAsc);
-    }
-  });
-
-  // highlight row in chart
-  grid.onMouseEnter.subscribe(function(e,args) {
-    var i = grid.getCellFromEvent(e).row;
-    var d = parcoords.brushed() || data;
-    parcoords.highlight([d[i]]);
-  });
-  grid.onMouseLeave.subscribe(function(e,args) {
-    parcoords.unhighlight();
-  });
-
-  // fill grid with data
-  gridUpdate(data);
-
-  // update grid on brush
-  parcoords.on("brush", function(d) {
-    gridUpdate(d);
-  });
-
-  function gridUpdate(data) {
-    dataView.beginUpdate();
-    dataView.setItems(data);
-    dataView.endUpdate();
-  };
-
-});
-</script>
+      </div>
+    </div>
+    <div  class="third">
+      <small>
+        <!--Last rendered <strong id="render-speed"></strong> lines-->
+      </small>
+      <h3>Documents: </h3>
+      <p id="legend" style="height:420px !important;">
+      </p>
+    </div>
+    <div class="third">
+      <h3>Search Documents on Top Words: <input type="text" id="search" placeholder="Search  for a Word..."></input></h3>
+      <p id="food-list">
+      </p>
+    </div>
+  </div>
+  </body>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="http://documentcloud.github.com/underscore/underscore.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>	
+  <script src="js/parallel.js"></script>
+</html>
