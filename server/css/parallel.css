@@ -88,17 +88,27 @@ canvas, svg {
 .dark .axis text.label {
   fill: #ddd;
 }
-.quarter, .third, .half {
+.quarter, .thirdA, .thirdB, .thirdC, .half {
   float: left;
 }
 .quarter {
   width: 23%;
   margin: 0 1%;
 }
-.third {
+
+.thirdA {
   width: 31.3%;
   margin: 0 1%;
 }
+.thirdB {
+  width: 15%;
+  margin: 0 1%;
+}
+.thirdC {
+  width: 45%;
+  margin: 0 1%;
+}
+
 .half {
   width: 48%;
   margin: 0 1%;

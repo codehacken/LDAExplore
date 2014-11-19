@@ -25,7 +25,7 @@ from processdata.fileops import write_file
 
 num_of_topics = 30
 num_of_passes = 5
-num_of_words = 3
+num_of_words = 10
 
 # Location of the data.
 data_loc = '20_newsgroups/alt.temp/9976'
