@@ -6,6 +6,7 @@ Basic LDA module that is used in the project.
 """
 import re
 from gensim import corpora, models
+import operator
 
 
 class LDAVisualModel:
@@ -57,8 +58,6 @@ class LDAVisualModel:
         # Find the number of topics.
         num_topics = self.lda.num_topics
 
-        print num_topics
-
         # Build the topic - document matrix.
         doc_top = []
         for idx, doc in enumerate(self.lda[self.mm]):
@@ -68,5 +67,26 @@ class LDAVisualModel:
 
         return doc_top
 
-    #def gen_doc_top_words(self, topics, doc_top):
-        #
+    @staticmethod
+    def gen_doc_top_words(topics, doc_top):
+        # This maintains the top words list for each document.
+        doc_to_word = []
+
+        # Check the probability of the topic and the word
+        # distribution in it.
+
+        for doc in doc_top:
+            tmp_word_prob = {}
+            for idx, top_prob in enumerate(doc):
+                if top_prob > 0:
+                    for word in topics[idx]:
+                        if word not in tmp_word_prob:
+                            tmp_word_prob[word[1]] = float(word[0])*top_prob
+                        else:
+                            tmp_word_prob[word[1]] += float(word[0])*top_prob
+
+            # Sort the dictionary
+            sorted_word_prob = sorted(tmp_word_prob.items(), key=operator.itemgetter(1), reverse=True)
+            doc_to_word.append(sorted_word_prob)
+
+        return doc_to_word

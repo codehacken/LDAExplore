@@ -79,19 +79,24 @@ This function is to write to CSV file.
 """
 
 
-def write_file(doc_top, filename):
+def write_file(doc_to_word, doc_top, num_of_words, num_topics, filename):
     # Write the headers for the columns to the CSV.
     col_string = "name,group,"
     for i in range(0, num_topics - 1):
-        col_string += "T " + str(i) + ","
-    col_string += "T " + str(i+1) + "\n"
+        col_string += "T" + str(i) + ","
+    col_string += "T" + str(i+1) + "\n"
 
     # Write the document information to the CSV file.
     for idx, doc in enumerate(doc_top):
-        col_string += "D" + str(idx) + ",D" + str(idx)
+        col_string += "\""
+        for i in range(0, num_of_words - 1):
+            col_string += str(doc_to_word[idx][i][0]) + ", "
+        col_string += str(doc_to_word[idx][i+1][0]) + "\","
+
+        col_string += "D" + str(idx)
         for topic in doc:
             col_string += "," + str(topic)
-        col_string += str(idx) + "\n"
+        col_string += "," + str(idx) + "\n"
 
     with open(filename, "w") as file_handle:
         file_handle.write(col_string)
