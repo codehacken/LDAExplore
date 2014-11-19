@@ -41,33 +41,32 @@ class LDAVisualModel:
         self.lda = models.LdaModel(corpus=self.mm, id2word=self.id2word, num_topics=num_top,
                                    update_every=update_t, chunksize=chunks, passes=num_pass)
 
-    def get_lda_corpus(self):
+    def get_lda_corpus(self, num_of_topics=10, num_of_words=10):
         """
         Get the topic associated with each document.
         """
         topics = []
         if self.lda:
-            for topic in self.lda.print_topics():
-                regex = re.findall(r'(0\.[0-9]*)\*([a-z]*)', topic, re.M | re.I)
+            for topic in self.lda.print_topics(num_of_topics, num_of_words):
+                regex = re.findall(r'(0\.[0-9]*)\*([0-9a-z]*)', topic, re.M | re.I)
                 topics.append(regex)
 
         return topics
 
-    def get_lda_obj(self):
-        """
-        :return: lda object in self.lda
-        """
-        return self.lda
+    def generate_doc_topic(self):
+        # Find the number of topics.
+        num_topics = self.lda.num_topics
 
-    def get_mm(self):
-        """
-        :return: The mm object from self.mm
-        """
-        return self.mm
+        print num_topics
 
-    def get_id2word(self):
-        """
-        :return: The corpus dictionary object.
-        """
-        return self.id2word
+        # Build the topic - document matrix.
+        doc_top = []
+        for idx, doc in enumerate(self.lda[self.mm]):
+            doc_top.append([0] * num_topics)
+            for topic in doc:
+                doc_top[idx][topic[0]] = topic[1]
 
+        return doc_top
+
+    #def gen_doc_top_words(self, topics, doc_top):
+        #

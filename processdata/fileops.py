@@ -15,11 +15,9 @@ Using nltk to clear stopwords from a document.
 from nltk import word_tokenize, Text
 from nltk.corpus import stopwords
 import glob
+import re
 
-special_characters = [':', '@', '$', '#', '%', '^', '&', '*', '(', ')', '_', '+', '=', '-', '`'
-                      , '<', '>', '?', '[', ']', '{', '}', '\\', '|', ',', '.', '!'
-                      , '***************************************************************************'
-                      , "''", '--']
+regex_clear = "^[a-zA-Z0-9_@]*$"
 
 token_list = []
 
@@ -49,8 +47,10 @@ class FileReader:
 
             # Clear Stop words in the tokens and special characters.
             for token in file_tokenized_text:
-                if token.lower() not in stop_words and token.lower() not in special_characters:
-                    tokens.append(token.lower())
+                lower_str = token.lower()
+                if lower_str not in stop_words and re.match(regex_clear, lower_str) and len(lower_str) > 2\
+                        and not(lower_str.isdigit()):
+                    tokens.append(lower_str)
 
         except UnicodeDecodeError:
             print "Unicode Decode Error: Moving On"
@@ -78,17 +78,8 @@ class FileReader:
 This function is to write to CSV file.
 """
 
-def write_file(word_corpus, lda_vis_model, filename):
-    # Find the number of topics.
-    num_topics = lda_vis_model.get_lda_obj().num_topics
 
-    # Build the topic - document matrix.
-    doc_top = []
-    for idx, doc in enumerate(lda_vis_model.get_lda_obj()[lda_vis_model.get_mm()]):
-        doc_top.append([0] * num_topics)
-        for topic in doc:
-            doc_top[idx][topic[0]] = topic[1]
-
+def write_file(doc_top, filename):
     # Write the headers for the columns to the CSV.
     col_string = "name,group,"
     for i in range(0, num_topics - 1):
@@ -100,7 +91,7 @@ def write_file(word_corpus, lda_vis_model, filename):
         col_string += "D" + str(idx) + ",D" + str(idx)
         for topic in doc:
             col_string += "," + str(topic)
-        col_string += "\n"
+        col_string += str(idx) + "\n"
 
     with open(filename, "w") as file_handle:
         file_handle.write(col_string)

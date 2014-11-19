@@ -23,6 +23,10 @@ from processdata.fileops import FileReader
 from processdata.lda import LDAVisualModel
 from processdata.fileops import write_file
 
+num_of_topics = 30
+num_of_passes = 1
+num_of_words = 10
+
 if __name__ == "__main__":
     # Read the directory
     reader = FileReader()
@@ -34,8 +38,18 @@ if __name__ == "__main__":
     # Perform LDA.
     lda = LDAVisualModel(word_corpus)
     lda.create_word_corpus(word_corpus)
-    lda.train_lda(30)
-    topics = lda.get_lda_corpus()
+
+    # Train the LDA model for specific number of topics
+    # and iterations.
+    lda.train_lda(num_of_topics, num_of_passes)
+
+    # Generate the document to topic matrix.
+    doc_top = lda.generate_doc_topic()
+
+    # Get the topic corpus.
+    topics = lda.get_lda_corpus(num_of_topics, num_of_words)
+
+    # Isolate top words for documents.
 
     # Print the topic information to a file.
-    write_file(topics, lda, "server/data/data.csv")
+    #write_file(doc_top, "server/data/data.csv")
