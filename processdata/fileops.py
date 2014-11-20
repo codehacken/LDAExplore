@@ -26,6 +26,38 @@ class FileReader:
     def __init__(self):
         self.token_list = []
 
+    # This is a specific function which reads a single file but treats every line as
+    # document.
+    # E.g. Abstracts from different documents can be treated as a separate document for
+    #      each abstract.
+
+    def read_text_sections(self, filename):
+        tokens = []
+
+        file_handle = open(filename, "r")
+
+        for line in file_handle:
+            try:
+
+                file_tokens = word_tokenize(line)
+                file_tokenized_text = Text(file_tokens)
+                stop_words = stopwords.words('english')
+
+                # Clear Stop words in the tokens and special characters.
+                for token in file_tokenized_text:
+                    lower_str = token.lower()
+                    if lower_str not in stop_words and re.match(regex_clear, lower_str) and len(lower_str) > 2\
+                            and not(lower_str.isdigit()):
+                        tokens.append(lower_str)
+
+            except UnicodeDecodeError:
+                print "Unicode Decode Error: Moving On"
+
+            if len(tokens) != 0:
+                self.token_list.append(tokens)
+
+        file_handle.close()
+
     def read_file(self, filename):
         """
         This function reads a file and returns a set of tokens back.

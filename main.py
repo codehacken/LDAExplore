@@ -24,18 +24,20 @@ from processdata.lda import LDAVisualModel
 from processdata.fileops import write_file
 
 num_of_topics = 30
-num_of_passes = 5
+num_of_passes = 100
 num_of_words = 10
 
 # Location of the data.
 data_loc = '20_newsgroups/alt.temp/9976'
 data_dir_loc = '20_newsgroups/alt.temp/'
+data_sects = 'server/data/info_vis_abstracts.csv'
 
 if __name__ == "__main__":
     # Read the directory
     reader = FileReader()
     #reader.read_file(data_loc)
-    reader.read_dir(data_dir_loc)
+    #reader.read_dir(data_dir_loc)
+    reader.read_text_sections(data_sects)
 
     # Get the token list
     word_corpus = reader.get_token_list()
@@ -58,4 +60,4 @@ if __name__ == "__main__":
     doc_to_word = lda.gen_doc_top_words(topics, doc_top)
 
     # Print the topic information to a file.
-    write_file(doc_to_word, doc_top, num_of_words, num_of_topics, "server/data/data.csv")
+    write_file(doc_to_word, doc_top, num_of_words, num_of_topics, "server/data/data1.csv")
