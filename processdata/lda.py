@@ -67,6 +67,37 @@ class LDAVisualModel:
 
         return doc_top
 
+    def generate_doc_topic_rank(self):
+        # Find the number of topics.
+        num_topics = self.lda.num_topics
+
+        doc_top_rank = []
+
+        # Build the topic - document matrix.
+        for idx, doc in enumerate(self.lda[self.mm]):
+            top_prob = [0] * num_topics
+            top_rank = [0] * num_topics
+
+            # This constructs the topic probability list.
+            for topic in doc:
+                top_prob[topic[0]] = topic[1]
+
+            # Construct the ranks.
+            prob_rank = sorted(top_prob, reverse=True)
+            top_sort = sorted(range(len(top_prob)), key=lambda k: top_prob[k],
+                              reverse=True)
+
+            # Create a new list with the ranks.
+            for rank, topic in enumerate(top_sort):
+                if prob_rank[rank] > 0:
+                    top_rank[topic] = rank
+                else:
+                    top_rank[topic] = num_topics - 1
+
+            doc_top_rank.append(top_rank)
+
+        return doc_top_rank
+
     @staticmethod
     def gen_doc_top_words(topics, doc_top):
         # This maintains the top words list for each document.

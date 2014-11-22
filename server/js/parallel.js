@@ -60,7 +60,7 @@ var svg = d3.select("svg")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
 // Load the data and visualization
-d3.csv("data/data1.csv", function(raw_data) {
+d3.csv("data/data.csv", function(raw_data) {
   // Convert quantitative scales to floats
   data = raw_data.map(function(d) {
     for (var k in d) {
@@ -83,7 +83,7 @@ d3.csv("data/data1.csv", function(raw_data) {
   xscale.domain(dimensions = d3.keys(data[0]).filter(function(k) {
     return (_.isNumber(data[0][k])) && (yscale[k] = d3.scale.linear()
       .domain(d3.extent(data, function(d) { return +d[k]; }))
-      .range([h, 0]));
+      .range([0, h]));
   }).sort());
 
   // Add a group element for each dimension.
@@ -208,10 +208,12 @@ function create_legend(colors,brush) {
     .style("background", function(d,i) { return color(d,0.85)})
     .attr("class", "color-bar");
 
+  /*
   legend
     .append("span")
     .attr("class", "tally")
     .text(function(d,i) { return 0});  
+  */
 
   legend
     .append("span")

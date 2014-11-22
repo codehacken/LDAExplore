@@ -16,10 +16,22 @@ from nltk import word_tokenize, Text
 from nltk.corpus import stopwords
 import glob
 import re
+import csv
 
 regex_clear = "^[a-zA-Z0-9_@]*$"
 
 token_list = []
+
+
+# This is the class to work with CSV files.
+def read_csv(filename, delimit='"', quote='|'):
+    file_ptr = open(filename, 'r')
+    csv_reader = csv.reader(file_ptr, delimiter=delimit,
+                            quotechar=quote)
+
+    # Use a generator to provide lines.
+    for row in csv_reader:
+        yield row
 
 
 class FileReader:
@@ -106,17 +118,14 @@ class FileReader:
         return self.token_list
 
 
-"""
-This function is to write to CSV file.
-"""
-
-
-def write_file(doc_to_word, doc_top, num_of_words, num_topics, filename):
+# This function is to writes to a CSV file.
+# The file contains the probability of each topic.
+def write_prob_to_file(doc_to_word, doc_top, num_of_words, num_topics, filename):
     # Write the headers for the columns to the CSV.
     col_string = "name,group,"
     for i in range(0, num_topics - 1):
         col_string += "T" + str(i) + ","
-    col_string += "T" + str(i+1) + "\n"
+    col_string += "T" + str(i) + ",ID\n"
 
     # Write the document information to the CSV file.
     for idx, doc in enumerate(doc_top):
@@ -131,4 +140,35 @@ def write_file(doc_to_word, doc_top, num_of_words, num_topics, filename):
         col_string += "," + str(idx) + "\n"
 
     with open(filename, "w") as file_handle:
+        file_handle.write(col_string)
+
+
+# This function is to writes to a CSV file.
+# The file contains the probability of each topic.
+def write_rank_to_file(doc_to_word, doc_top_rank, num_of_words, num_topics, t_file, d_file):
+    # Write the headers for the columns to the CSV.
+    col_string = "name,group,"
+    for i in range(0, num_topics - 1):
+        col_string += "T" + str(i+1) + ","
+    col_string += "T" + str(i+1) + ",ID\n"
+
+    # Write the document information to the CSV file.
+    csvreader = read_csv(t_file)
+    for idx, doc in enumerate(doc_top_rank):
+        col_string += "\""
+        for i in range(0, num_of_words - 1):
+            col_string += str(doc_to_word[idx][i][0]) + ", "
+        col_string += str(doc_to_word[idx][i+1][0]) + "\","
+
+        # Construct the Ranking for each topic.
+        # Make all the topics that have prob. 0 as the last rank.
+        #col_string += "D" + str(idx+1)
+
+        col_string += csvreader.next()[0]
+        for topic in doc:
+            col_string += "," + str(topic+1)
+        col_string += "," + str(idx+1) + "\n"
+
+    # Final writing to the document.
+    with open(d_file, "w") as file_handle:
         file_handle.write(col_string)
