@@ -39,9 +39,9 @@ if __name__ == "__main__":
 
     # Read the directory
     reader = FileReader()
-    #reader.read_file(data_loc)
+    reader.read_file(data_loc)
     #reader.read_dir(data_dir_loc)
-    reader.read_text_sections(data_sects)
+    #reader.read_text_sections(data_sects)
 
     # Get the token list
     word_corpus = reader.get_token_list()
@@ -64,5 +64,8 @@ if __name__ == "__main__":
     # Isolate top words for documents.
     doc_to_word = lda.gen_doc_top_words(topics, doc_top)
 
+    # Generate the topic hierarchy.
+    lda.gen_topic_hierarchy(topics)
+
     # Print the topic information to a file.
-    write_rank_to_file(doc_to_word, doc_top_rank, num_of_words, num_of_topics, title_list, final_data_file)
+    # write_rank_to_file(doc_to_word, doc_top_rank, num_of_words, num_of_topics, title_list, final_data_file)

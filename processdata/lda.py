@@ -98,6 +98,23 @@ class LDAVisualModel:
 
         return doc_top_rank
 
+    def gen_topic_hierarchy(self, topics):
+        # Create the hierarchy.
+        top_word_hier = {"children": []}
+
+        for idx, word_list in enumerate(topics):
+            children = {}
+
+            # Create the children nodes - words.
+            for word in word_list:
+                children["name"] = word[1]
+                children["size"] = 100
+
+            topic = {"name": "T" + str(idx), "children": children}
+
+        # Add the hierarchy to the
+        top_word_hier["children"].append(topic)
+
     @staticmethod
     def gen_doc_top_words(topics, doc_top):
         # This maintains the top words list for each document.
