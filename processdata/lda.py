@@ -10,7 +10,7 @@ import operator
 
 
 class LDAVisualModel:
-    def __init__(self, word_corpus):
+    def __init__(self, word_corpus, scaling_factor=100000):
         """
         The LDAVisualModel requires list of word lists from the
         document corpus. Each list of words represents a document.
@@ -19,6 +19,7 @@ class LDAVisualModel:
         self.id2word = corpora.Dictionary(word_corpus)
         self.mm = []
         self.lda = None
+        self.scaling_factor = scaling_factor
 
     def create_word_corpus(self, word_corpus, store_corpus=False, store_loc='dicts/corpus.mm'):
         """
@@ -103,17 +104,18 @@ class LDAVisualModel:
         top_word_hier = {"children": []}
 
         for idx, word_list in enumerate(topics):
-            children = {}
+            children = []
 
             # Create the children nodes - words.
             for word in word_list:
-                children["name"] = word[1]
-                children["size"] = 100
+                children.append({"name": word[1], "size": float(word[0])*self.scaling_factor,
+                                 "value": float(word[0])*1000})
 
-            topic = {"name": "T" + str(idx), "children": children}
+            # Add the list to current hierarchy.
+            top_word_hier["children"].append({"name": "T" + str(idx), "children": children})
 
-        # Add the hierarchy to the
-        top_word_hier["children"].append(topic)
+        top_word_hier["name"] = 'Topics'
+        return top_word_hier
 
     @staticmethod
     def gen_doc_top_words(topics, doc_top):

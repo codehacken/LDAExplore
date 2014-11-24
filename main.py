@@ -22,6 +22,8 @@ that are generated.
 from processdata.fileops import FileReader
 from processdata.lda import LDAVisualModel
 from processdata.fileops import write_rank_to_file
+from processdata.fileops import write_prob_to_file
+from processdata.fileops import write_top_hier_to_file
 
 num_of_topics = 20
 num_of_passes = 50
@@ -33,15 +35,19 @@ data_dir_loc = '20_newsgroups/alt.temp/'
 data_sects = 'server/data/info_vis_abstracts.csv'
 title_list = 'server/data/key_vis_title.csv'
 
-final_data_file = 'server/data/data.csv'
+# List of files that are written to.
+prob_data_file = 'server/data/prob_data.csv'
+rank_data_file = 'server/data/rank_data.csv'
+top_hier_data_file = 'server/data/top_hier_data.json'
+
 
 if __name__ == "__main__":
 
     # Read the directory
     reader = FileReader()
-    reader.read_file(data_loc)
+    #reader.read_file(data_loc)
     #reader.read_dir(data_dir_loc)
-    #reader.read_text_sections(data_sects)
+    reader.read_text_sections(data_sects)
 
     # Get the token list
     word_corpus = reader.get_token_list()
@@ -60,12 +66,15 @@ if __name__ == "__main__":
 
     # Get the topic corpus.
     topics = lda.get_lda_corpus(num_of_topics, num_of_words)
+    print topics
 
     # Isolate top words for documents.
     doc_to_word = lda.gen_doc_top_words(topics, doc_top)
 
     # Generate the topic hierarchy.
-    lda.gen_topic_hierarchy(topics)
+    top_hier = lda.gen_topic_hierarchy(topics)
 
     # Print the topic information to a file.
-    # write_rank_to_file(doc_to_word, doc_top_rank, num_of_words, num_of_topics, title_list, final_data_file)
+    write_prob_to_file(doc_to_word, doc_top, num_of_words, num_of_topics, prob_data_file)
+    write_rank_to_file(doc_to_word, doc_top_rank, num_of_words, num_of_topics, title_list, rank_data_file)
+    write_top_hier_to_file(top_hier, top_hier_data_file)
