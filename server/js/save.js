@@ -2,8 +2,8 @@
 // Copyright (c) 2012, Kai Chang
 // Released under the BSD License: http://opensource.org/licenses/BSD-3-Clause
 
-var w = document.body.clientWidth,
-    h = 1000,
+var w = 1280,
+    h = 800,
     r = 720,
     x = d3.scale.linear().range([0, r]),
     y = d3.scale.linear().range([0, r]),
@@ -47,28 +47,6 @@ d3.json("data/area.json", function(data) {
 
   d3.select(window).on("click", function() { zoom(root); });
 });
-
-function zoom(d, i) {
-  var k = r / d.r / 2;
-  x.domain([d.x - d.r, d.x + d.r]);
-  y.domain([d.y - d.r, d.y + d.r]);
-
-  var t = vis.transition()
-      .duration(d3.event.altKey ? 7500 : 750);
-
-  t.selectAll("circle")
-      .attr("cx", function(d) { return x(d.x); })
-      .attr("cy", function(d) { return y(d.y); })
-      .attr("r", function(d) { return k * d.r; });
-
-  t.selectAll("text")
-      .attr("x", function(d) { return x(d.x); })
-      .attr("y", function(d) { return y(d.y); })
-      .style("opacity", function(d) { return k * d.r > 20 ? 1 : 0; });
-
-  node = d;
-  d3.event.stopPropagation();
-}
 
 
 // *******************************

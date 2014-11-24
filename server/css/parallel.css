@@ -8,7 +8,7 @@ body {
   font-family: Ubuntu, Tahoma, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.4em;
-  background: #f7f7f7;
+  background: #ffffff !important;
   color: #404040;
 }
 body.dark {
@@ -249,3 +249,5 @@ button#exclude-data:hover {
 .dark ::-webkit-scrollbar-thumb {
   background: #444;
 }
+
+svg .tooltip { opacity: 1; }
