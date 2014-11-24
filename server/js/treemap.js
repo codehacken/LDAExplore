@@ -1,7 +1,3 @@
-/**
- * Created by ashwin on 11/23/14.
- */
-
 /*
  * If running inside bl.ocks.org we want to resize the iframe to fit both graphs
  * This bit of code was shared originally at https://gist.github.com/benjchristensen/2657838
@@ -10,50 +6,50 @@ if(parent.document.getElementsByTagName("iframe")[0]) {
     parent.document.getElementsByTagName("iframe")[0].setAttribute('style', 'height: 700px !important');
 }
 
-var margin = {top: 20, right: 0, bottom: 0, left: 0},
-    width = 300,
-    height = 220 - margin.top - margin.bottom,
-    formatNumber = d3.format(",d"),
-    transitioning;
+var treemap_margin = {top: 20, right: 0, bottom: 0, left: 0},
+    treemap_width = 300,
+    treemap_height = 220 - treemap_margin.top - treemap_margin.bottom,
+    treemap_formatNumber = d3.format(",d"),
+    treemap_transitioning;
 
 /* create x and y scales */
 var x = d3.scale.linear()
-    .domain([0, width])
-    .range([0, width]);
+    .domain([0, treemap_width])
+    .range([0, treemap_width]);
 
 var y = d3.scale.linear()
-    .domain([0, height])
-    .range([0, height]);
+    .domain([0, treemap_height])
+    .range([0, treemap_height]);
 
 var treemap = d3.layout.treemap()
     .children(function(d, depth) { return depth ? null : d.children; })
     .sort(function(a, b) { return a.value - b.value; })
-    .ratio(height / width * 0.5 * (1 + Math.sqrt(5)))
+    .ratio(treemap_height / treemap_width * 0.5 * (1 + Math.sqrt(5)))
     .round(false);
 
 /* create svg */
-var svg = d3.select("#chart").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.bottom + margin.top)
-    .style("margin-left", -margin.left + "px")
-    .style("margin.right", -margin.right + "px")
+var treemap_svg = d3.select("#chart_tree").append("svg")
+    .attr("width", treemap_width + treemap_margin.left + treemap_margin.right)
+    .attr("height", treemap_height + treemap_margin.bottom + treemap_margin.top)
+    .style("margin-left", -treemap_margin.left + "px")
+    .style("margin.right", -treemap_margin.right + "px")
     .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+    .attr("transform", "translate(" + treemap_margin.left + "," + treemap_margin.top + ")")
     .style("shape-rendering", "crispEdges");
 
 var color = d3.scale.category20c();
 
-var grandparent = svg.append("g")
+var grandparent = treemap_svg.append("g")
     .attr("class", "grandparent");
 
 grandparent.append("rect")
-    .attr("y", -margin.top)
-    .attr("width", width)
-    .attr("height", margin.top);
+    .attr("y", -treemap_margin.top)
+    .attr("width", treemap_width)
+    .attr("height", treemap_margin.top);
 
 grandparent.append("text")
     .attr("x", 6)
-    .attr("y", 6 - margin.top)
+    .attr("y", 6 - treemap_margin.top)
     .attr("dy", ".75em");
 
 /* load in data, display root */
@@ -66,8 +62,8 @@ d3.json("data/top_hier_data.json", function(root) {
 
     function initialize(root) {
         root.x = root.y = 0;
-        root.dx = width;
-        root.dy = height;
+        root.dx = treemap_width;
+        root.dy = treemap_height;
         root.depth = 0;
     }
 
@@ -109,7 +105,7 @@ d3.json("data/top_hier_data.json", function(root) {
             .select("text")
             .text(name(d));
 
-        var g1 = svg.insert("g", ".grandparent")
+        var g1 = treemap_svg.insert("g", ".grandparent")
             .datum(d)
             .attr("class", "depth");
 
@@ -132,7 +128,7 @@ d3.json("data/top_hier_data.json", function(root) {
             .attr("class", "child")
             .call(rect)
             .append("title")
-            .text(function(d) { return d.name + " " + formatNumber(d.size); });
+            .text(function(d) { return d.name + " " + treemap_formatNumber(d.size); });
 
 
         /* write parent rectangle */
@@ -147,7 +143,7 @@ d3.json("data/top_hier_data.json", function(root) {
                 }
             })
             .append("title")
-            .text(function(d) { return d.name + " " + formatNumber(d.size); }); /*should be d.value*/
+            .text(function(d) { return d.name + " " + treemap_formatNumber(d.size); }); /*should be d.value*/
 
 
         /* Adding a foreign object instead of a text object, allows for text wrapping */
@@ -169,8 +165,8 @@ d3.json("data/top_hier_data.json", function(root) {
 
         /* create transition function for transitions */
         function transition(d) {
-            if (transitioning || !d) return;
-            transitioning = true;
+            if (treemap_transitioning || !d) return;
+            treemap_transitioning = true;
 
             var g2 = display(d),
                 t1 = g1.transition().duration(750),
@@ -181,10 +177,10 @@ d3.json("data/top_hier_data.json", function(root) {
             y.domain([d.y, d.y + d.dy]);
 
             // Enable anti-aliasing during the transition.
-            svg.style("shape-rendering", null);
+            treemap_svg.style("shape-rendering", null);
 
             // Draw child nodes on top of parent nodes.
-            svg.selectAll(".depth").sort(function(a, b) { return a.depth - b.depth; });
+            treemap_svg.selectAll(".depth").sort(function(a, b) { return a.depth - b.depth; });
 
             // Fade-in entering text.
             g2.selectAll("text").style("fill-opacity", 0);
@@ -203,8 +199,8 @@ d3.json("data/top_hier_data.json", function(root) {
 
             // Remove the old node when the transition is finished.
             t1.remove().each("end", function() {
-                svg.style("shape-rendering", "crispEdges");
-                transitioning = false;
+                treemap_svg.style("shape-rendering", "crispEdges");
+                treemap_transitioning = false;
             });
 
         }//endfunc transition
