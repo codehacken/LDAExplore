@@ -37,7 +37,7 @@ var treemap_svg = d3.select("#chart_tree").append("svg")
     .attr("transform", "translate(" + treemap_margin.left + "," + treemap_margin.top + ")")
     .style("shape-rendering", "crispEdges");
 
-var color = d3.scale.category20c();
+var color_chart = d3.scale.category20c();
 
 var grandparent = treemap_svg.append("g")
     .attr("class", "grandparent");
@@ -220,7 +220,7 @@ d3.json("data/top_hier_data.json", function(root) {
             .attr("y", function(d) { return y(d.y); })
             .attr("width", function(d) { return x(d.x + d.dx) - x(d.x); })
             .attr("height", function(d) { return y(d.y + d.dy) - y(d.y); })
-            .style("background", function(d) { return d.parent ? color(d.name) : null; });
+            .style("background", function(d) { return d.parent ? color_chart(d.name) : null; });
     }
 
     function foreign(foreign){ /* added */

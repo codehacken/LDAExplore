@@ -2,7 +2,7 @@
     width: 300px;
     height: 220px;
     background: #bbb;
-    margin: 1px auto;
+    margin: 0px auto;
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -20,13 +20,14 @@ text {
 }
 
 rect {
-    fill: none;
-    stroke: #fff;
+
 }
+
 
 rect.parent,
 .grandparent rect {
     stroke-width: 2px;
+     border-color: green !important;
 }
 
 .grandparent rect {
@@ -40,6 +41,7 @@ rect.parent,
 
 rect.parent {
     pointer-events: all;
+     border-color: green !important;
 }
 
 .children:hover rect.child,

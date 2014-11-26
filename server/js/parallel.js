@@ -438,6 +438,11 @@ function brush() {
   paths(selected, foreground, brush_count, true);
 }
 
+//*******************************************************
+//
+//
+//****************************************************
+
 // render a set of polylines on a canvas
 function paths(selected, ctx, count) {
   var n = selected.length,

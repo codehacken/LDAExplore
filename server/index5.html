@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/parallel.css" />
+<link rel="stylesheet" type="text/css" href="css/treemap.css" />        
+<title>Zoomable Treemap of Chicago Data Portal</title>
+</head>
+
+    <body>
+        
+            
+            <div id="header">
+    <h1>LDA Explorer</h1>
+    <button title="Zoom in on selected data" id="keep-data" disabled="disabled">Keep</button>
+    <button title="Remove selected data" id="exclude-data" disabled="disabled">Exclude</button>
+    <button title="Export data as CSV" id="export-data">Export</button>
+    <div class="controls">
+      <strong id="rendered-count"></strong>/<strong id="selected-count"></strong><!--<strong id="data-count"></strong>-->
+      <div class="fillbar"><div id="selected-bar"><div id="rendered-bar">&nbsp;</div></div></div>
+      Lines at <strong id="opacity"></strong> opacity.
+      <span class="settings">
+        <button id="hide-ticks">Hide Ticks</button>
+        <button id="show-ticks" disabled="disabled">Show Ticks</button>
+        <button id="dark-theme">Dark</button>
+        <button id="light-theme" disabled="disabled">Light</button>
+      </span>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+        
+  <div id="chart">
+    <canvas id="background"></canvas>
+    <canvas id="foreground"></canvas>
+    <canvas id="highlight"></canvas>
+    <svg></svg>
+  </div>
+        
+  <div id="wrap">
+    <div class="thirdA">
+        <p id="chart_tree">  
+    </div>  
+      
+    <div  class="thirdB">
+      <small>
+        <!--Last rendered <strong id="render-speed"></strong> lines-->
+      </small>
+      <h3>Documents: </h3>
+      <p id="legend" style="height:420px !important;">
+      </p>
+    </div>
+      
+    <div class="thirdC">
+      <h3>Search Documents on Top Words: <input type="text" id="search" placeholder="Search  for a Word..."></input></h3>
+      <p id="food-list">
+      </p>
+    </div>
+    </div>
+
+        <script src="http://d3js.org/d3.v2.js"></script>
+        <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+        <script src="js/treemap.js"></script>
+        <script src="http://documentcloud.github.com/underscore/underscore.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>	
+        <script src="js/parallel.js"></script>
+    </body>
+</html>
