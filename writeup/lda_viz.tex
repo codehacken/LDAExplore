@@ -125,11 +125,13 @@ of Computer Science and Electrical, UMBC.
 Kiante Branley is with the Department
 of Computer Science and Electrical, UMBC.
 \protect\\
-E-mail: \{gashwin1, bran4\}@umbc.edu}}
+E-mail: \{gashwin1, bran4\}@umbc.edu}\\
+Advisor: Dr. Jian Chen \& Dr. Shimei Pan
+}
 
 % The paper headers
 \markboth{CMSC 691 Project Report}%
-{Shell \MakeLowercase{\textit{et al.}}: }
+{Ganesan, Branley \MakeLowercase{\textit{et al.}}: }
 
 % Abstract.
 \IEEEtitleabstractindextext{%
@@ -166,7 +168,7 @@ DataViz, InfoViz, LDA, Latent, Dirichlet Allocation, Parallel Coordinates, Treem
 
 \textit{Topic Modelling} tries to automate the process of extracting topics from documents and annotate them with semantic information [2]. It is a set of statistical algorithms that extract correlated words from documents. These extracted word sets are called \textit{Topics}. They are later annotated with semantic information, so that they are easily understood by people. For e.g. consider a a word set extracted such as \textit{visualization, sets, clusters, infoviz, interfaces} from a document then we have a general notion that this word set represents the topic \textit{Information Visualization}. In this example, the "topic" generated using a topic modelling algorithm is the word set and \textit{Information Visualization} is the semantic "topic name" annotated by the user. Latent Dirichlet Allocation (LDA) [1] is one of the common methods to perform topic modelling on a given corpus of documents.
 
-LDA generates viz. two types of distributions i.e. the topic distribution for each document in the set and the word distribution for each topic. The model works by computing the joint probability distribution of the words in each document to group words which appear together and form a single topic. These distributions can be changed by tweaking the underlying parameters. Our project \textit{LDAExplore}, tries to give visual cues about how these distributions look, and how the topics and documents are interrelated at the corpus level and for groups or individual documents. Also, it gives the users the ability query documents for specific words based on topics and see how correlated a topic is to a document. Some of the main concerns while creating the design are that visual should be able to work with a large set of documents while providing the ability to see individual and group relations. The number of topics, though, is considered to be a smaller set as compared to the number of documents.
+LDA generates viz. two types of distributions i.e. the topic distribution for each document in the set and the word distribution for each topic. The model works by computing the joint probability distribution of the words in each document to group words which appear together and form a single topic. These distributions can be changed by tweaking the underlying parameters. Our project, \textit{LDAExplore}, tries to give visual cues about how these distributions look, and how the topics and documents are interrelated at the corpus level and for groups or individual documents. Also, it gives the users the ability query documents for specific words based on topics and see how correlated a topic is to a document. Some of the main concerns while creating the design are that visual should be able to work with a large set of documents while providing the ability to see individual and group relations. The number of topics, though, is considered to be a smaller set as compared to the number of documents.
 
 \section{Related Work}
 \label{sec:RelatedWork}
@@ -200,15 +202,30 @@ When the size of the corpus is large, the user will likely try to understand onl
 \end{enumerate}
 
 \subsubsection{Perform set operations}
-While working with groups of documents, the user intuitively performs set operations such as \textit{include} and \textit{exclude}. \textit{Include} gives the user, the ability to add a filtered set of documents to future filters. \textit{Exclude} does the exact opposite, which is to remove the document set from any filter operations in the future.
+While working with groups of documents, the user intuitively performs set operations such as \textit{include} and \textit{exclude}. \textit{Include} gives the user, the ability to add a filtered set of documents to future filters. \textit{Exclude} does the exact opposite, which is to remove the document set from any filter operations in the future. Once the document corpus has been explored, the user can export the filtered data for any post processing that is performed separately.
 
-Once the document corpus has been explored, the user can export the filtered data for any post processing that is performed separately.
+\subsubsection{Show \& Cluster Similar Topics}
 
-\section{Prototype Design}
-\subsection{Data Abstraction}
+To cluster documents which have a similar topic distribution.
 
-\subsection{Task list and how they are performed}
+\subsubsection{Cluster Documents \& Display Topics  }
+To display topics related to the clustered documents.
 
+\subsubsection{Perform Cluster Operations}
+To allow operations on clusters such as merging \& splitting of clusters which change the topics clusters or document clusters accordingly.
+
+\subsubsection{Annotating Topics}
+Annotation of topics and documents / clusters.
+
+
+\subsection{Prototype Design}
+\subsubsection{Data Abstraction}
+
+\subsubsection{Task list and how they are performed}
+
+\section{System Overview}
+
+\section{Case Study}
 
 %\begin{figure}[!t]
 %\centering
