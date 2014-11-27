@@ -9,6 +9,10 @@
 %\renewcommand{\rmdefault}{ptm}\selectfont
 
 \usepackage{ragged2e}
+\usepackage{caption}
+\captionsetup{justification=centering}
+\usepackage{lipsum}
+%\usepackage{titling}
 
 % *** CITATION PACKAGES ***
 %
@@ -20,17 +24,19 @@
 
 % *** GRAPHICS RELATED PACKAGES ***
 %
-\ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
-\else
+%\ifCLASSINFOpdf
+\usepackage[pdftex]{graphicx}
+\graphicspath{{.}}
+\DeclareGraphicsExtensions{.png}
+%\else
   % \usepackage[dvips]{graphicx}
   % \graphicspath{{../eps/}}
   % \DeclareGraphicsExtensions{.eps}
-\fi
+%\fi
 
 % *** MATH PACKAGES ***
 %
-%\usepackage[cmex10]{amsmath}
+\usepackage[cmex10]{amsmath}
 %\interdisplaylinepenalty to 10000
 %\interdisplaylinepenalty=2500
 
@@ -147,6 +153,7 @@ DataViz, InfoViz, LDA, Latent, Dirichlet Allocation, Parallel Coordinates, Treem
 
 % make the title area
 \maketitle
+
 \IEEEdisplaynontitleabstractindextext
 %
 % \ifCLASSOPTIONpeerreview
@@ -206,24 +213,70 @@ While working with groups of documents, the user intuitively performs set operat
 
 \subsubsection{Show \& Cluster Similar Topics}
 
-To cluster documents which have a similar topic distribution.
-
-\subsubsection{Cluster Documents \& Display Topics  }
-To display topics related to the clustered documents.
+Once the word distributions for each topic are known, the user will look for topics that are similar. Topic similarity can measured using methods such KL-Divergence. Similar topics can be grouped together, so that the number of topics on the visual display can be reduced and hierarchical topic collections can be formed.
 
 \subsubsection{Perform Cluster Operations}
-To allow operations on clusters such as merging \& splitting of clusters which change the topics clusters or document clusters accordingly.
+Similar topics, will lead to a new group of documents which have these topics. The main task for the visual is to enable the user to define groups of documents and topics based on their own knowledge.
 
 \subsubsection{Annotating Topics}
-Annotation of topics and documents / clusters.
-
+User should have the option to annotate of topics and documents or the respective clusters they lie in.
 
 \subsection{Prototype Design}
-\subsubsection{Data Abstraction}
+Based on the set of tasks defined, we describe how \textit{LDAExplore} works.
 
-\subsubsection{Task list and how they are performed}
+\begin{figure*}[!t]
+\centering
+\includegraphics[scale=0.5]{parallel_coordinates_filter}
+\caption{Displaying the Topic Distribution}
+\label{top_details}
+\end{figure*}
+
+\subsubsection{Visualizing Topics}
+We use a \textit{treemap} to visualize the topics. The diagram below, shows how the topics are displayed. Each rectangle is a topic and is given an ID like $T_1 ... T_n$ where there $n$ defined topics. In figure \ref{top_doc}, the total number of topics are $20$. In the treemap, the size of the rectangle defines the probability of the topic. In the current design, a likelihood is defined for individual topics with respect to each document, rather than the document collection as a whole. Hence the topics are represented by squares showing that all topics have an equal likelihood.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.75]{all_topics}
+\caption{Displaying the Topic - Document Relations}
+\label{top_doc}
+\end{figure}
+
+When the user clicks on the a specific topic, the word associated with the topic are revealed. Figure \ref{top_details}, shows the an example word distribution. The word with the highest probability has the largest area. In this example, the word \textit{data} has the largest probability for topic \textit{T4}. In the current design, the number of words displayed per topic is maintained constant at $10$. The user can traverse back to the \textit{Topics}, clicking on the \textit{Topics} tab at the top of the treemap. Whenever the user drills down, into the word distribution, the parent is always known.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.75]{topic_details}
+\caption{Displaying the Topic Distribution}
+\label{top_details}
+\end{figure}
+
+\subsubsection{Relating Topics \& Documents}
+We use parallel coordinates to show the correlation between topics and documents. The parallel coordinates have two types of axes. The first is the one that represents the document. The second type of axis is for topics. For e.g. consider Figure \ref{top_doc}, which shows a total of $21$ axes. The first axis \textit{ID} shows the all the documents in the corpus and ranges from document id $D_0$ to $D_322$. The other $20$ axes each represents a topic. Once LDA generates the probabilities for each topic in a document, we rank the topics. The topic axes shows the rank of the topic with respect to the document. So in figure \ref{top_doc}, document $D_0$ has Topic $T_1$ at rank $1$, while others have it at rank $4, 7, 16 \& 20$ respectively. Each document has a different color, so that the user can distinguish between the graphs of various documents. The ranks are ordered in ascending order with $1$ showing the highest degree of correlation and $n$ (where n is the number of topics), showing $0$ or the least correlation. Topic ranks give the user which topic is the most correlated and which is the least.
+
+\subsubsection{Filtering}
+\textit{LDAExplore} provides a range of filtering options. Figure \ref{filtering} provides a detailed overview of the filtering features. There are three main types of filtering:
+\begin{enumerate}
+\item Filtering by Range - Each axis can be used to filter the documents by selecting a specific range on the axis. The parallel coordinates displays the curves, only for the selected documents. Each axis can filtered simultaneously, thus creating a \textit{filter-chain}.
+\item Filter by Searching - A simple search bar is provided to the user, to search for documents using words. The words are generated by calculating the probability of a word from a each topic, being associated to the document. \ref{sec:sysoverview} explains this mechanism in more detail.
+\item Filter by Selecting Individual Documents - The documents column, lists each document in the corpus by its title. The user can click on a specific document to filter it out. Whenever a document is filtered out, its color is changed to downplay the document.
+\end{enumerate}
+
+Once the user has filtered the documents, the user can highlight a specific document within the filtered document set by using the mouse to hover over the document - word set (column 3 in figure \ref{filtering}). The total number of document in the filtered set is given at the top on the navigation bar. Also, the user can export the filtered data to CSV format. 
+
+\subsubsection{Set Operations}
+There are $2$ main set operations that are supported in \textit{LDAExplore} i.e. inclusion and exclusion. The \textit{include} operation is performed by the \textit{Keep} and exclusion using \textit{exclude} as seen in figure \ref{filtering}.
 
 \section{System Overview}
+
+
+\label{sec:sysoverview}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[scale=0.5]{annotated_filtered}
+\caption{Displaying the Topic Distribution}
+\label{filtering}
+\end{figure*}
 
 \section{Case Study}
 
