@@ -456,7 +456,7 @@ function paths(selected, ctx, count) {
 
   shuffled_data = _.shuffle(selected);
 
-  data_table(shuffled_data.slice(0,25));
+  data_table(shuffled_data.slice(0,100));
 
   ctx.clearRect(0,0,w+1,h+1);
 
