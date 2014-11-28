@@ -1,8 +1,8 @@
 #chart_tree {
-    width: 300px;
+    width: 200px;
     height: 220px;
     background: #bbb;
-    margin: 0px auto;
+    margin-left: -50px auto;
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -50,7 +50,17 @@ rect.parent {
 }
 
 .textdiv { /* text in the boxes */
-    font-size: x-small;
+    font-size: small;
     padding: 5px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#content {
+  width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+.mycontent-left {
+  border-right: 1px dashed #333;
 }

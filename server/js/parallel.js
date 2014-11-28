@@ -185,6 +185,7 @@ function create_legend(colors,brush) {
     .html("")
     .selectAll(".row")
     .data( _.keys(colors).sort() )
+    .style("padding-left","15px;")
 
   // filter by group
   var legend = legend_data
@@ -420,6 +421,7 @@ function brush() {
 
   legend
     .style("text-decoration", function(d) { return _.contains(excluded_groups,d) ? "line-through" : null; })
+    .attr("style", "padding-left: 15px;") 
     .attr("class", function(d) {
       return (tallies[d].length > 0)
            ? "row"

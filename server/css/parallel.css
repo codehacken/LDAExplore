@@ -103,16 +103,18 @@ canvas, svg {
 }
 
 .thirdA {
-  width: 35% !important;
+  width: 30% !important;
   margin: 0 1%;
 }
 .thirdB {
-  width: 30%;
+  width: 35%;
   margin: 0 1%;
+  border-left: 1px solid rgba(140,140,140,0.5);
 }
 .thirdC {
   width: 28%;
   margin: 0 1%;
+  border-left: 1px solid rgba(140,140,140,0.5);
 }
 
 .half {
@@ -167,7 +169,6 @@ button#exclude-data:hover {
 #legend {
   text-align: left;
   overflow-y: auto;
-  border-left: 1px solid rgba(140,140,140,0.5);
 }
 .row {
   cursor: pointer;
