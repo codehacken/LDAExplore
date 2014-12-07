@@ -151,7 +151,7 @@ def write_rank_to_file(doc_to_word, doc_top_rank, num_of_words, num_topics, t_fi
     col_string = "name,group,"
     for i in range(0, num_topics - 1):
         col_string += "T" + str(i+1) + ","
-    col_string += "T" + str(i+1) + ",ID\n"
+    col_string += "T" + str(num_topics) + ",ID\n"
 
     # Write the document information to the CSV file.
     csvreader = read_csv(t_file)

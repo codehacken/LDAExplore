@@ -29,7 +29,7 @@ class LDAVisualModel:
         """
         for text in word_corpus:
             self.mm.append(self.id2word.doc2bow(text))
-
+	
         if store_corpus:
             corpora.MmCorpus.serialize(store_loc, word_corpus)
 
@@ -99,7 +99,8 @@ class LDAVisualModel:
 
         return doc_top_rank
 
-    def gen_topic_hierarchy(self, topics):
+    @staticmethod
+    def gen_topic_hierarchy(topics):
         # Create the hierarchy.
         top_word_hier = {"children": []}
 
@@ -108,8 +109,8 @@ class LDAVisualModel:
 
             # Create the children nodes - words.
             for word in word_list:
-                children.append({"name": word[1], "size": float(word[0])*self.scaling_factor,
-                                 "value": float(word[0])*1000})
+                children.append({"name": word[1], "size": word[0],
+                                 "value": float(word[0])*1000, "url": "javascript:void(0)"})
 
             # Add the list to current hierarchy.
             top_word_hier["children"].append({"name": "T" + str(idx), "children": children})
