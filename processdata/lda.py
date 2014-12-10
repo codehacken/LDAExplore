@@ -108,12 +108,19 @@ class LDAVisualModel:
             children = []
 
             # Create the children nodes - words.
+            top_word_str = ""
+            i = 0
+
             for word in word_list:
+                if i == 0:
+                    top_word_str += word[1]
+                    i += 1
+
                 children.append({"name": word[1], "size": word[0],
                                  "value": float(word[0])*1000, "url": "javascript:void(0)"})
 
             # Add the list to current hierarchy.
-            top_word_hier["children"].append({"name": "T" + str(idx), "children": children})
+            top_word_hier["children"].append({"name": "T" + str(idx) + " " + top_word_str, "children": children})
 
         top_word_hier["name"] = 'Topics'
         return top_word_hier

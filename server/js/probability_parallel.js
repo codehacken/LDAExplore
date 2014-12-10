@@ -60,7 +60,7 @@ var svg = d3.select("svg")
     .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
 // Load the data and visualization
-d3.csv("data/probability_data.csv", function(raw_data) {
+d3.csv("data/prob_data.csv", function(raw_data) {
   // Convert quantitative scales to floats
   data = raw_data.map(function(d) {
     for (var k in d) {
