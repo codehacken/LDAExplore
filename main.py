@@ -55,9 +55,10 @@ prob_data_file = 'server/data/prob_data.csv'
 rank_data_file = 'server/data/rank_data.csv'
 top_hier_data_file = 'server/data/top_hier_data.json'
 
-#s_words = ['data', 'visualization', 'visual', 'approach', 'analysis', 'study', 'techniques',
-#           'interactive', 'results', 'design', 'paper', 'user',  'information', 'based', 'system',
-#           'present', 'time', 'different', 'use', 'using', 'used']
+#s_words = ['data', 'visualization', 'visual', 'approach', 'analysis', 'study',
+#            'techniques', 'interactive', 'results', 'design', 'paper', 'user',
+#            'information', 'based', 'system', 'present', 'time', 'different',
+#            'use', 'using', 'used']
 
 if __name__ == "__main__":
 
@@ -99,7 +100,12 @@ if __name__ == "__main__":
     top_hier = lda.gen_topic_hierarchy(topics)
 
     # Print the topic information to a file.
-    write_prob_to_file(doc_to_word, doc_top, num_of_words, num_of_topics, title_list, prob_data_file)
-    write_rank_to_file(doc_to_word, doc_top_rank, num_of_words, num_of_topics, title_list, rank_data_file)
+    write_prob_to_file(doc_to_word, doc_top, num_of_words, num_of_topics,
+                       title_list, prob_data_file)
+
+    write_rank_to_file(doc_to_word, doc_top_rank, num_of_words, num_of_topics,
+                       title_list, rank_data_file)
+
     write_top_hier_to_file(top_hier, top_hier_data_file)
+
 
