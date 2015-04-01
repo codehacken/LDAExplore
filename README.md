@@ -1,4 +1,4 @@
-CMSC691-FINALPROJECT
+LDAExplore (CMSC691-FINALPROJECT)
 ====================
 
 This is the FINAL Project code for CMSC 691.
