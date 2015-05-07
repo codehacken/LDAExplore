@@ -8,7 +8,7 @@ body {
   font-family: Ubuntu, Tahoma, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.4em;
-  background: #f7f7f7;
+  background: #ffffff !important;
   color: #404040;
 }
 body.dark {
@@ -38,29 +38,23 @@ canvas, svg {
 .brush rect.extent {
   fill: rgba(100,100,100,0.15);
   stroke: #fff;
-   border-color: green !important;
 }
 .dark .brush rect.extent {
   fill: rgba(100,100,100,0.15);
   stroke: #ddd;
-   border-color: green !important;
 }
 .brush:hover rect.extent {
   stroke: #222;
   stroke-dasharray: 5,5;
-   border-color: green !important;
 }
 .brush rect.extent:hover {
   stroke-dasharray: none;
-  border-color: green !important;
 }
 .resize rect {
   fill: none;
 }
 .background {
   fill: none;
-  border-color: transparent!important;
-  border: 0px!important;
 }
 .dark .background {
   fill: none;
@@ -103,18 +97,16 @@ canvas, svg {
 }
 
 .thirdA {
-  width: 30% !important;
+  width: 25%;
   margin: 0 1%;
 }
 .thirdB {
-  width: 5%;
+  width: 35%;
   margin: 0 1%;
-  border-left: 1px solid rgba(140,140,140,0.5);
 }
 .thirdC {
-  width: 50%;
+  width: 30%;
   margin: 0 1%;
-  border-left: 1px solid rgba(140,140,140,0.5);
 }
 
 .half {
@@ -134,11 +126,6 @@ p {
 small {
   line-height: 1.2em;
 }
-
-button{
-  color: #000000 !important;
-}
-
 button[disabled=disabled] {
   color: #555 !important;
   opacity: 0.4;
@@ -147,7 +134,7 @@ button[disabled=disabled] {
   display: none;
 }
 .dark button[disabled=disabled] {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 button#keep-data,
 button#exclude-data {
@@ -169,6 +156,7 @@ button#exclude-data:hover {
 #legend {
   text-align: left;
   overflow-y: auto;
+  border-left: 1px solid rgba(140,140,140,0.5);
 }
 .row {
   cursor: pointer;
@@ -237,7 +225,6 @@ button#exclude-data:hover {
   float: right;
   height: 24px;
   line-height: 24px;
-  color: #ffffff !important;
 }
 
 /* Scrollbars */
@@ -262,3 +249,5 @@ button#exclude-data:hover {
 .dark ::-webkit-scrollbar-thumb {
   background: #444;
 }
+
+svg .tooltip { opacity: 1; }
