@@ -1,6 +1,7 @@
-LDAExplore
+CMSC691-FINALPROJECT
 ====================
 
+This is the FINAL Project code for CMSC 691.
 The project uses the lda library from python which implements Latent Dirichlet Allocation (LDA) using Gibbs Sampling.
 
 DOCUMENTATION

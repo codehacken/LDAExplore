@@ -1,0 +1,1466 @@
+Optimal sampling for hemicubes
+Volume rendering of DCT-based compressed 3D scalar data
+Visualization of multidimensional shape and texture features in laser range data using complex-valued Gabor wavelets
+Vision-an architecture for global illumination calculations
+Visualizing network data
+Real time responsive animation with personality
+Quaternion frame approach to streamline visualization
+"Obliq-3D: a high-level, fast-turnaround 3D animation system"
+"Using line integral convolution for flow visualization: curvilinear grids, variable-speed animation, and unsteady flows"
+A predictor-corrector technique for visualizing unsteady flow
+Grouping volume renderers for enhanced visualization in computational fluid dynamics
+Visualization of geometric algorithms
+"Competent, compact, comparative visualization of a vortical flow field"
+Optical models for direct volume rendering
+Calibration requirements and procedures for a monitor-based augmented reality system
+Line art rendering via a coverage of isoparametric curves
+Dynamic color quantization of video sequences
+On particle path generation based on quadrilinear interpolation and Bernstein-Bezier polynomials
+A unified hierarchical algorithm for global illumination with scattering volumes and object clusters
+Collision detection for interactive graphics applications
+Hybrid scan-conversion of circles
+Modeling and visualization of knitwear
+Specification by-example of virtual agents behavior
+Exploiting triangulated surface extraction using tetrahedral decomposition
+Octree-R: an adaptive octree for efficient ray tracing
+Automatic isosurface propagation using an extrema graph and sorted boundary cell lists
+D-NURBS: a physics-based framework for geometric design
+Function representation for sweeping by a moving solid
+Shape description by medial surface construction
+Volume-preserving free-form solids
+A fast method for estimating discrete field values in early engineering design
+A road map to solid modeling
+Solving geometric constraints by homotopy
+An algorithm for the medial axis transform of 3D polyhedral solids
+Efficient triangular surface approximations using wavelets and quadtree data structures
+Controlled topology simplification
+Interactive time-dependent particle tracing using tetrahedral decomposition
+"Efficient streamline, streamribbon, and streamtube constructions on unstructured grids"
+Feature extraction and iconic visualization
+Splatting of non rectilinear volumes through stochastic resampling
+Volumetric data exploration using interval volume
+Glyphs for visualizing uncertainty in vector fields
+"A digital brain atlas for surgical planning, model-driven segmentation, and teaching"
+Frequency analysis of gradient estimators in volume rendering
+A real-time photo-realistic visual flythrough
+RIVA: a versatile parallel rendering system for interactive scientific visualization
+Analysis of a parallel volume rendering system based on the shear-warp factorization
+Image composition schemes for sort-last polygon rendering on 2D mesh multicomputers
+Fractal volume compression
+Implementation and analysis of an image-based global illumination framework for animated environments
+Structured penumbral irradiance computation
+Visualizing unstructured flow data using dual stream functions
+Reconstruction error characterization and control: a sampling theory approach
+Interactive display of large NURBS models
+Multipole expansion of the light vector
+Error and complexity of random walk Monte Carlo radiosity
+The discrete analytical hyperspheres
+Incremental algorithms for collision detection between polygonal models
+Animation of deformable models using implicit surfaces
+"The topology of symmetric, second-order 3D tensor fields"
+Virtual Data Visualizer
+Tracking and visualizing turbulent 3D features
+The lazy sweep ray casting algorithm for rendering irregular grids
+Speeding up isosurface extraction using interval trees
+Evaluation and design of filters using a Taylor series expansion
+Fast display of illuminated field lines
+Adaptive real-time level-of-detail based rendering for polygonal models
+Conveying the 3D shape of smoothly curving transparent surfaces via texture
+Dynamic free-form deformations for animation synthesis
+Complex character positioning based on a compatible flow model of multiple supports
+Physically-based stochastic simplification of mathematical knots
+Converting discrete images to partitioning trees
+A wavelet representation of reflectance functions
+A fast Gibbs sampler for synthesizing constrained fractals
+Out-of-core streamline visualization on large unstructured meshes
+Modeling and visualization for a pearl-quality evaluation simulator
+Multiresolution representation and visualization of volume data
+Breadth-first ray tracing utilizing uniform spatial subdivision
+A visibility matching tone reproduction operator for high dynamic range scenes
+A high accuracy volume renderer for unstructured data
+Fast horizon computation at all points of a terrain with visibility and shading applications
+Line art illustrations of parametric and implicit forms
+Calibration-free augmented reality
+Efficient collision detection using bounding volume hierarchies of k-DOPs
+"Modeling, animating, and rendering complex scenes using volumetric textures"
+Visualizing nonlinear vector field topology
+Structure-significant representation of structured datasets
+Splatting errors and antialiasing
+RSVP: a geometric toolkit for controlled repair of solid models
+A new line integral convolution algorithm for visualizing time-varying flow fields
+Efficient polygon clipping for an SIMD graphics pipeline
+Memory-efficient ray classification for visibility operations
+The Information Mural: a technique for displaying and navigating large information spaces
+Interactive volume navigation
+Ray-tracing triangular trimmed free-form surfaces
+Dynamic Catmull-Clark subdivision surfaces
+Visualization of scientific video data using KL decomposition
+MIP-map level selection for texture mapping
+Adaptive projection operators in multiresolution scientific visualization
+Novel view synthesis by cascading trilinear tensors
+Multiresolution analysis on irregular surface meshes
+Perception of human motion with different geometric models
+Dynamic scene occlusion culling
+On a construction of a hierarchy of best linear spline approximations using repeated bisection
+Acquiring a radiance distribution to superimpose virtual objects onto a real scene
+Real-time elastic deformations of soft tissues for surgery simulation
+Edgebreaker: connectivity compression for triangle meshes
+Adaptive projection operators in multiresolution scientific visualization
+Locally toleranced surface simplification
+Feature extraction of separation and attachment lines
+Large datasets at a glance: combining textures and colors in scientific visualization
+Evaluation of memoryless simplification
+High-quality splatting on rectilinear grids with efficient culling of occluded voxels
+Simplification of tetrahedral meshes with error bounds
+Ray casting architectures for volume visualization
+Fast iterative refinement of articulated solid dynamics
+Interactive ray tracing for volume visualization
+Efficient skeletonization of volumetric objects
+Alias-free voxelization of geometric objects
+The ball-pivoting algorithm for surface reconstruction
+Partitioning 3D surface meshes using watershed segmentation
+"Using linked volumes to model object collisions, deformation, cutting, carving, and joining"
+Fast projection-based ray-casting algorithm for rendering curvilinear volumes
+Tools for computing tangent curves for linearly varying vector fields over tetrahedral domains
+A rule-based interactive behavioral animation system for humanoids
+Focusing in algorithm explanation
+A functional framework for Web-based information visualization systems
+Graph visualization and navigation in information visualization: A survey
+Visual discovery and analysis
+Compressed progressive meshes
+Designing pixel-oriented visualization techniques: theory and applications
+Strategies for direct volume rendering of diffusion tensor fields
+Accelerated isosurface extraction in time-varying fields
+Structure-based brushes: a mechanism for navigating hierarchically organized data and information spaces
+The prioritized-layered projection algorithm for visible set estimation
+Conformal surface parameterization for texture mapping
+Anisotropic diffusion in vector field visualization on Euclidean domains and surfaces
+Tissue classification based on 3D local intensity structures for volume rendering
+Perturbation methods for interactive specular reflections
+Spectral volume rendering
+Accessibility analysis using computer graphics hardware
+Dynamic modeling of butterfly subdivision surfaces
+Fast ray-tracing of rectilinear volume data using distance transforms
+A perceptually-driven parallel algorithm for efficient radiosity simulation
+Analysis of head pose accuracy in augmented reality
+Calibration-free augmented reality in perspective
+"An order of magnitude faster isosurface rendering in software on a PC than using dedicated, general purpose rendering hardware"
+Interactive virtual relighting of real scenes
+Perception-based fast rendering and antialiasing of walkthrough sequences
+A BRDF postprocess to integrate porosity on rendered surfaces
+ ldquo;Meshsweeper rdquo;: dynamic point-to-polygonal mesh distance and applications
+Terrain decimation through Quadtree Morphing
+A graphical representation of the state spaces of hierarchical level-of-detail scene descriptions
+Parameterization and reconstruction from 3D scattered points based on neural network and PDE techniques
+On simulated annealing and the construction of linear spline approximations for scattered data
+Nonlinear multiresolution techniques with applications to scientific visualization in a haptic environment
+A level-set approach for the metamorphosis of solid models
+Cutting and stitching: converting sets of polygons to manifold surfaces
+Detection and visualization of closed streamlines in planar flows
+Hierarchical model for real time simulation of virtual human crowds
+Interactive direct rendering of trivariate B-spline scalar functions
+Texture mixing and texture movie synthesis using statistical learning
+Multiresolution methods for nonmanifold models
+Visualization exploration and encapsulation via a spreadsheet-like interface
+A phase field model for continuous clustering on vector fields
+An attempt for coloring multichannel MR imaging data
+Two-level volume rendering
+Penalized-distance volumetric skeleton algorithm
+Volume illustration: nonphotorealistic rendering of volume models
+Topology-preserving smoothing of vector fields
+Preventing self-intersection under free-form deformation
+Reliable path for virtual endoscopy: ensuring complete examination of human organs
+Minimally immersive flow visualization
+High-quality texture reconstruction from multiple scans
+Efficient conservative visibility culling using the prioritized-layered projection algorithm
+Extended specifications and test data sets for data level comparisons of direct volume rendering algorithms
+Extracting objects from range and radiance images
+"Polaris: a system for query, analysis, and visualization of multidimensional relational databases"
+The classification of volumetric display systems: characteristics and predictability of the image space
+A flexible approach for visual data mining
+MGV: a system for visualizing massive multidigraphs
+"The floating column algorithm for shaded, parallel display of function surfaces without patches"
+ThemeRiver: visualizing thematic changes in large document collections
+Information visualization and visual data mining
+An anatomy-based approach to human muscle modeling and deformation
+VideoPlus: a method for capturing the structure and appearance of immersive environments
+General construction of time-domain filters for orientation data
+A geometric comparison of algorithms for fusion control in stereoscopic HTDs
+A generic rendering system
+Spatial-temporal antialiasing
+Texture mapping using surface flattening via multidimensional scaling
+Designing effective transfer functions for volume rendering from photographic volumes
+Terrain simplification simplified: a general framework for view-dependent out-of-core visualization
+EWA splatting
+Hierarchical pixel bar charts
+Multidimensional transfer functions for interactive volume rendering
+Lagrangian-Eulerian advection of noise and dye textures for unsteady flow visualization
+A hardware-assisted scalable solution for interactive volume rendering of time-varying data
+Stereoscopic view-dependent visualization of terrain height fields
+Dynamic particle coating
+Three-dimensional interfaces for querying by example in content-based image retrieval
+Adding support for high-level skeletal animation
+Vertex data compression through vector quantization
+Interactive visualization of state transition systems
+Robust creation of implicit surfaces from polygonal meshes
+Frame-to-frame coherent animation with two-pass radiosity
+Improving the robustness and accuracy of the marching cubes algorithm for isosurfacing
+Polynomial surfaces interpolating arbitrary triangulations
+Fast and intuitive metamorphosis of 3D polyhedral models using SMCC mesh merging scheme
+Approximating digital 3D shapes by rational Gaussian surfaces
+Computing and rendering point set surfaces
+Realistic rendering and animation of knitwear
+Modeling and rendering of points with local geometry
+Shadows and soft shadows with participating media using splatting
+Multiscale visualization using data cubes
+Distributed Virtual Reality environments based on rewriting systems
+GraphSplatting: visualizing graphs as continuous fields
+Communicating centrality in policy network drawings
+Illustrative interactive stipple rendering
+Simplification and repair of polygonal models using volumetric techniques
+Comparing simplification and image-based techniques for 3D client-server rendering systems
+Using motion to illustrate static 3D shape-kinetic visualization
+Image-based techniques in a hybrid collision detector
+Hardware-based view-independent cell projection
+A model for volume lighting and modeling
+Dynamic line integral convolution for visualizing streamline evolution
+Volumetric segmentation using Weibull E-SD fields
+On marching cubes
+Adjoints and importance in rendering: an overview
+A survey of visibility for walkthrough applications
+Interactive clipping techniques for texture-based volume visualization and volume shading
+Global visualization and alignments of whole bacterial genomes
+Three-dimensional flow characterization using vector pattern matching
+Natural motion animation through constraining and deconstraining at will
+Interactive volume rendering of large sparse data sets using adaptive mesh refinement hierarchies
+Fast multiresolution image operations in the wavelet domain
+From visual data exploration to visual data mining: a survey
+External memory management and simplification of huge meshes
+Multilevel representation and transmission of real objects with progressive octree particles
+Deriving a particle system from continuum mechanics for the animation of deformable objects
+An architecture for Java-based real-time distributed visualization
+Visualizing diffusion tensor MR images using streamtubes and streamsurfaces
+Cubist style rendering from photographs
+Tricubic interpolation of discrete surfaces for binary volumes
+Texture synthesis for 3D shape representation
+Transitive mesh space of a progressive mesh
+Topology preserving top-down compression of 2D vector fields using bintree and triangular quadtrees
+Semantic representation and correspondence for state-based motion transition
+Material interface reconstruction
+High-quality animation of 2D steady vector fields
+Interactive stereoscopic rendering of volumetric environments
+Selective refinement queries for volume visualization of unstructured tetrahedral meshes
+Combining hierarchy and energy for drawing directed graphs
+Binary-space-partitioned images for resolving image-based visibility
+Human factors in visualization research
+Image registration using hierarchical B-splines
+CartoDraw: a fast algorithm for generating contiguous cartograms
+Wavelet-based multiresolution analysis of irregular surface meshes
+Wavelet-based progressive compression scheme for triangle meshes: wavemesh
+Mesh simplification with hierarchical shape analysis and iterative edge contraction
+Incremental penetration depth estimation between convex polytopes using dual-space expansion
+The lattice-Boltzmann method for simulating gaseous phenomena
+Color nonuniformity in projection-based displays: analysis and solutions
+A fast impulsive contact suite for rigid body simulation
+Topological segmentation in three-dimensional vector fields
+Virtual trackballs revisited
+Faster shading by equal angle interpolation of vectors
+ nu;-Quaternion splines for the smooth interpolation of orientations
+Footprint area sampled texturing
+Camera-sampling field and its applications
+Fuzzy vector median-based surface smoothing
+Efficient example-based painting and synthesis of 2D directional texture
+Synthesis and rendering of bidirectional texture functions on arbitrary surfaces
+Camera-based detection and removal of shadows from interactive multiprojector displays
+Hierarchical data visualization using a fast rectangle-packing algorithm
+Real-time finite element modeling for surgery simulation: an application to virtual suturing
+Generalized B-spline subdivision-surface wavelets for geometry compression
+A new physical model with multilayer architecture for facial expression animation using dynamic adaptive mesh
+Efficient implementation of real-time view-dependent multiresolution meshing
+Counting cases in substitope algorithms
+A topological hierarchy for functions on triangulated surfaces
+Reconstruction of volume data with quadratic super splines
+O-buffer: a framework for sample-based graphics
+A streaming narrow-band algorithm: interactive computation and visualization of level sets
+Interactive visualization of three-dimensional vector fields with flexible appearance control
+A model for smooth viewing and navigation of large 2D information spaces
+Robust linear dimensionality reduction
+Conveying shape with texture: experimental investigations of texture   39;s effects on shape categorization judgments
+Multiresolution indexing of triangulated irregular networks
+Applications of Forman   39;s discrete Morse theory to topology visualization and mesh compression
+Visualizing a sphere eversion
+Robust feature detection and local classification for surfaces based on moment analysis
+Fast evolution of image manifolds and application to filtering and segmentation in 3D medical images
+Crest lines for surface segmentation and flattening
+On a construction of a hierarchy of best linear spline approximations using a finite element approach
+Point-based probabilistic surfaces to show surface uncertainty
+Haptics-based dynamic implicit solid modeling
+Simplification of three-dimensional density maps
+Confetti: object-space point blending and splatting
+Comparative flow visualization
+Augmented scene modeling and visualization by optical and acoustic sensor integration
+ISA and IBFVS: image space-based visualization of flow on surfaces
+Image-based collision detection for deformable cloth models
+Interactive volume rendering of thin thread structures within multivalued scientific data sets
+Visualization of vector fields using seed LIC and volume rendering
+Adaptive extraction of time-varying isosurfaces
+Image-space visibility ordering for cell projection volume rendering of unstructured data
+An intestinal surgery simulator: real-time collision processing and visualization
+Lattice-based flow field modeling
+Metamorphosis of 3D polyhedral models using progressive connectivity transformations
+Dynamic range reduction inspired by photoreceptor physiology
+Light field morphing using 2D features
+vLOD: high-fidelity walkthrough of large virtual environments
+Rendering deformable surface reflectance fields
+Comparing 2D vector field visualization methods: a user study
+A technique for rendering complex portals
+A parallel coordinates style interface for exploratory volume visualization
+Modal warping: real-time simulation of large rotational deformation and manipulation
+Tetrahedralization of point sets using expanding spheres
+Accelerated unsteady flow line integral convolution
+Barycentric parameterizations for isotropic BRDFs
+A multiresolution representation for massive meshes
+A statistical wisp model and pseudophysical approaches for interactive hairstyle generation
+Geometry-aware bases for shape approximation
+Sharpen amp;Bend: recovering curved sharp edges in triangle meshes produced by feature-insensitive sampling
+Camera-based calibration techniques for seamless multiprojector displays
+A practical approach to spectral volume rendering
+Warp sculpting
+Correcting interperspective aliasing in autostereoscopic displays
+Registration based on projective reconstruction technique for augmented reality systems
+A method to generate soft shadows using a layered depth image and warping
+An intelligent system approach to higher-dimensional classification of volume data
+Hardware-assisted visibility sorting for unstructured volume rendering
+Reflectance from images: a model-based approach for human faces
+Uniform remeshing with an adaptive domain: a new scheme for view-dependent level-of-detail rendering of meshes
+Creating and simulating skeletal muscle from the visible human data set
+Dynamic interaction between deformable surfaces and nonsmooth objects
+Creating speech-synchronized animation
+Real-time optimal adaptation for planetary geometry and texture: 4-8 tile hierarchies
+Quick-VDR: out-of-core view-dependent rendering of gigantic models
+Topological methods for 2D time-dependent vector fields based on stream lines and path lines
+Topological lines in 3D tensor fields and discriminant Hessian factorization
+Importance-driven feature enhancement in volume visualization
+Knowledge precepts for design and evaluation of information visualizations
+An insight-based methodology for evaluating bioinformatics visualizations
+Topological fisheye views for visualizing large graphs
+Clifford Fourier transform on vector fields
+Reconstruction and visualization of planetary nebulae
+Advanced virtual endoscopic pituitary surgery
+Visualization of geologic stress perturbations using Mohr diagrams
+Decorating surfaces with bidirectional texture functions
+Boolean operations with implicit and parametric representation of primitives using R-functions
+Stroke surfaces: temporally coherent artistic animations from video
+Radiance caching for efficient global illumination computation
+Faster isosurface ray tracing using implicit KD-trees
+A sampling framework for accurate curvature estimation in discrete surfaces
+Interactive transparency rendering for large CAD models
+Blind robust watermarking schemes for copyright protection of 3D mesh objects
+"Guest Editorial: Special Issue on Haptics, Virtual, and Augmented Reality"
+TORNADO: omnistereo video imaging with rotating optics
+Development of anthropomorphic multi-D.O.F master-slave arm for mutual telexistence
+Data streaming in telepresence environments
+Dynamic interactions in physically realistic collaborative virtual environments
+Six degree-of-freedom haptic rendering using spatialized normal cone search
+Cutting on triangle mesh: local model-based haptic display for dental preparation surgery simulation
+Psychophysical evaluation of in-situ ultrasound visualization
+Comparison of path visualizations and cognitive measures relative to travel technique in a virtual environment
+Real-time 3D human capture system for mixed-reality art and entertainment
+An infrastructure for realizing custom-tailored augmented reality user interfaces
+Achieving dialogue with children with severe autism in an adaptive multisensory interaction: the    34;MEDIATE   34; project
+A particle system for interactive visualization of 3D flows
+Non-Eeuclidean spring embedders
+"Visualization task performance with 2D, 3D, and combination displays"
+Time-varying contour topology
+Distance preserving flattening of surface sections
+Realistic haptic rendering of interacting deformable objects in virtual environments
+Geometry-driven photorealistic facial expression synthesis
+Stylized and abstract painterly rendering system using a multiscale segmented sphere hierarchy
+A new combinatorial approach to surface reconstruction with sharp features
+Mesh parameterization by minimizing the synthesized distortion metric with the coefficient-optimizing algorithm
+Thin structure segmentation and visualization in three-dimensional biomedical images: a shape-based approach
+Predictive haptic guidance: intelligent user assistance for the control of dynamic tasks
+Ray-tracing polymorphic multidomain spectral/hp elements for isosurface rendering
+Real-time animation of complex hairstyles
+Fast and reliable collision culling using graphics hardware
+Scanning scene tunnel for city traversing
+Electrostatic tactile display with thin film slider and its application to tactile telepresentation systems
+Transpost: a novel approach to the display and transmission of 360 degrees-viewable 3D solid images
+Interactive display of isosurfaces with global illumination
+Geometry-dependent lighting
+Visualization of boundaries in volumetric data sets using LH histograms
+Improving contact realism through event-based haptic feedback
+Discrete Sibson interpolation
+Noise-resistant fitting for spherical harmonics
+Accurate visible speech synthesis based on concatenating variable length motion capture data
+Optical merger of direct vision with virtual images for scaled teleoperation
+Segmentation of discrete vector fields
+Interpolation over arbitrary topology meshes using a two-phase subdivision scheme
+Knowledge discovery in high-dimensional data: case studies and a user survey for the rank-by-feature framework
+CAVE and fishtank virtual-reality displays: a qualitative and quantitative comparison
+Ribbon networks for modeling navigable paths of autonomous agents in virtual environments
+Melting and burning solids into liquids and gases
+Accurate direct illumination using iterative adaptive sampling
+Dynamic simulation of articulated rigid bodies with contact and collision
+Meshless thin-shell simulation based on global conformal parameterization
+Dual Laplacian editing for meshes
+The effect of visual and interaction fidelity on spatial cognition in immersive virtual environments
+A network architecture supporting consistent rich behavior in collaborative interactive applications
+Views on Visualization
+Methods and framework for visualizing higher-order finite elements
+Projected tetrahedra revisited: a barycentric formulation applied to digital radiograph reconstruction using higher-order attenuation functions
+A topological approach to simplification of three-dimensional scalar functions
+Visualization of Seifert surfaces
+Visual analysis of gel-free proteome data
+An approach to the perceptual optimization of complex visualizations
+Explanatory and illustrative visualization of special and general relativity
+Drawing directed graphs using quadratic programming
+Designing for social data analysis
+Parallel Sets: interactive exploration and visual analysis of categorical data
+Registration using natural features for augmented reality systems
+3D distance fields: a survey of techniques and applications
+Digital marbling: a multiscale fluid model
+Real-time markerless tracking for augmented reality: the virtual visual servoing framework
+Bilateral recovering of sharp edges on feature-insensitive sampled meshes
+An improved vertex caching scheme for 3D mesh rendering
+Mean square error approximation for wavelet-based semiregular mesh compression
+Multifocal projection: a multiprojector technique for increasing focal depth
+Vis/InfoVis 2006 pre-pages
+ASK-GraphView: A Large Scale Graph Visualization System
+MatrixExplorer: a Dual-Representation System to Explore Social Networks
+Visual Analysis of Multivariate State Transition Graphs
+Balancing Systematic and Flexible Exploration of Social Networks
+Multi-Scale Banking to 45 Degrees
+Measuring Data Abstraction Quality in Multiresolution Visualizations
+Enabling Automatic Clutter Reduction in Parallel Coordinate Plots
+Topographic Visualization of Prefix Propagation in the Internet
+Network Visualization by Semantic Substrates
+Hierarchical Edge Bundles: Visualization of Adjacency Relations in Hierarchical Data
+Visualization of Geo-spatial Point Sets via Global Shape Transformation and Local Pixel Placement
+Worldmapper: The World as You   39;ve Never Seen it Before
+Spatial Analysis of News Sources
+Dynamic Map Labeling
+Visualization of Barrier Tree Sequences
+Visualizing Business Data with Generalized Treemaps
+FacetMap: A Scalable Search and Browse Visualization
+Visual Exploration of Complex Time-Varying Graphs
+Smashing Peacocks Further: Drawing Quasi-Trees from Biconnected Components
+IPSep-CoLa: An Incremental Procedure for Separation Constraint Layout of Graphs
+User Interaction with Scatterplots on Small Screens - A Comparative Evaluation of Geometric-Semantic Zoom and Fisheye Distortion
+The Perceptual Scalability of Visualization
+High-Dimensional Visual Analytics: Interactive Exploration Guided by Pairwise Views of Point Distributions
+Generating Graphs for Visual Analytics through Interactive Sketching
+Graph Signatures for Visual Analytics
+TreePlus: Interactive Exploration of Networks with Enhanced Tree Layouts
+Visual Analysis of Large Heterogeneous Social Networks by Semantic and Structural Abstraction
+Interactive Exploration of Data Traffic with Hierarchical Network Maps
+Visualizing Internet Routing Changes
+A Visualization System for Space-Time and Multivariate Patterns (VIS-STAMP)
+VU-Flow: A Visualization Tool for Analyzing Navigation in Virtual Environments
+Summarizing Dynamic Bipolar Conflict Structures
+Provenance and Annotation for Visual Exploration Systems
+An Insight-Based Longitudinal Study of Visual Analytics
+Expressive Facial Animation Synthesis by Learning Speech Coarticulation and Expression Spaces
+High-Quality and Interactive Animations of 3D Time-Varying Vector Fields
+Image-Based Stained Glass
+Illustrative Context-Preserving Exploration of Volume Data
+Local Histograms for Design of Transfer Functions in Direct Volume Rendering
+RotoTexture: Automated Tools for Texturing Raw Video
+Sample-Based Cameras for Feed Forward Reflection Rendering
+Streamline Predicates
+Human Motion Capture Data Compression by Model-Based Indexing: A Power Aware Approach
+Real-Time Interaction with a Humanoid Avatar in an Immersive Table Tennis Simulation
+Usability of Multiviewpoint Images for Spatial Interaction in Projection-Based Display Systems
+Robust Feature Classification and Editing
+"Interactive Approximate Rendering of Reflections, Refractions, and Caustics"
+Transferring of Speech Movements from Video to 3D Face Space
+Design and Evaluation of Tiled Parallel Coordinate Visualization of Multichannel EEG Data
+SQ-Map: Efficient Layered Collision Detection and Haptic Rendering
+Interactive Tensor Field Design and Visualization on Surfaces
+A Transparently Scalable Visualization Architecture for Exploring the Universe
+Interactive Level-of-Detail Selection Using Image-Based Quality Metric for Large Volume Visualization
+Advections with Significantly Reduced Dissipation and Diffusion
+Streaming Simplification of Tetrahedral Meshes
+Low-Cost Telepresence for Collaborative Virtual Environments
+Constrained Texture Synthesis via Energy Minimization
+Visual Simulation of Heat Shimmering and Mirage
+Volume Splitting and Its Applications
+Evaluation of a Low-Cost 3D Sound System for Immersive Virtual Reality Training Systems
+"A Survey on Hair Modeling: Styling, Simulation, and Rendering"
+Image-Based Color Ink Diffusion Rendering
+A Streaming-Based Solution for Remote Visualization of 3D Graphics on Mobile Devices
+Pose-Oblivious Shape Signature
+Caustics Mapping: An Image-Space Technique for Real-Time Caustics
+Personality and Emotion-Based High-Level Control of Affective Story Characters
+Graph Visualization Techniques for Web Clustering Engines
+TopoLayout: Multilevel Graph Layout by Topological Features
+Interactive Collision Detection for Deformable Models Using Streaming AABBs
+Topology-Controlled Volume Rendering
+Light Scattering from Filaments
+A Model and Framework for Visualization Exploration
+Fracturing Rigid Materials
+Aura 3D Textures
+Fast Animation of Lightning Using an Adaptive Mesh
+A Framework for Holographic Scene Representation and Image Synthesis
+Demand Characteristics in Assessing Motion Sickness in a Virtual Environment: Or Does Taking a Motion Sickness Questionnaire Make You Sick
+Comparing Interpersonal Interactions with a Virtual Human to Those with a Real Human
+Comparing Interpersonal Interactions with a Virtual Human to Those with a Real Human
+A Six Degree-of-Freedom God-Object Method for Haptic Display of Rigid Bodies with Surface Properties
+Comparison of Four Freely Available Frameworks for Image Processing and Visualization That Use ITK
+Efficient collision detection within deforming spherical sliding contact
+Texture-Based Visualization of Unsteady 3D Flow by Real-Time Advection and Volumetric Illumination
+Texture-Based Visualization of Unsteady 3D Flow by Real-Time Advection and Volumetric Illumination
+A Radial Adaptation of the Sugiyama Framework for Visualizing Hierarchical Information
+Manifold Dual Contouring
+Physics-Based Subsurface Visualization of Human Tissue
+Computation of Localized Flow for Steady and Unsteady Vector Fields and Its Applications
+Tabletop Computed Lighting for Practical Digital Photography
+"Seeing People in Different Light-Joint Shape, Motion, and Reflectance Capture"
+Topology Repair of Solid Models Using Skeletons
+Stereoscopic Video Synthesis from a Monocular Video
+Space-Time Light Field Rendering
+Derivative Particles for Simulating Detailed Movements of Fluids
+Isocube: Exploiting the Cubemap Hardware
+Data-Driven Grasp Synthesis Using Shape Matching and Task-Based Pruning
+Blood Flow in Its Context: Combining 3D B-Mode and Color Doppler Ultrasonic Data
+A Coherent Grid Traversal Approach to Visualizing Particle-Based Simulation Data
+Vector Field Editing and Periodic Orbit Extraction Using Morse Decomposition
+Style Grammars for Interactive Visualization of Architecture
+NPU-Based Image Compositing in a Distributed Visualization System
+Runtime Visualization of the Human Arterial Tree
+Value-Cell Bar Charts for Visualizing Large Transaction Data Sets
+Terrain Synthesis from Digital Elevation Models
+An Optimal Detector Structure for the Fourier Descriptors Domain Watermarking of 2D Vector Graphics
+Garuda: A Scalable Tiled Display Wall Using Commodity PCs
+Design and Analysis of Optimization Methods for Subdivision Surface Fitting
+Temporal Radiance Caching
+Calculus of Nonrigid Surfaces for Geometry and Texture Manipulation
+   8730;3-Subdivision-Based Biorthogonal Wavelets
+Fast and Effective Feature-Preserving Mesh Denoising
+Texturing Fluids
+Tileable BTF
+RTcams: A New Perspective on Nonphotorealistic Rendering from Photographs
+A Multi-Level Cache Model for Run-Time Optimization of Remote Visualization
+CST: Constructive Solid Trimming for Rendering BReps and CSG
+Particle Systems for Efficient and Accurate High-Order Finite Element Visualization
+Interactive Transfer Function Design Based on Editing Direct Volume Rendered Images
+Mixed Media Painting and Portraiture
+Visualization of Vorticity and Vortices in Wall-Bounded Turbulent Flows
+Drawing on Air: Input Techniques for Controlled 3D Line Illustration
+Identification of Spring Parameters for Deformable Object Simulation
+Arthrodial Joint Markerless Cross-Parameterization and Biomechanical Visualization
+"Visual Analysis of Network Traffic for Resource Planning, Interactive Monitoring, and Interpretation of Security Threats"
+AdaptiviTree: Adaptive Tree Visualization for Tournament-Style Brackets
+ManyEyes: a Site for Visualization at Internet Scale
+Scented Widgets: Improving Navigation Cues with Embedded Visualizations
+Show Me: Automatic Presentation for Visual Analysis
+Casual Information Visualization: Depictions of Data in Everyday Life
+Visualizing the History of Living Spaces
+Legible Cities: Focus-Dependent Multi-Resolution Visualization of Urban Relationships
+Interactive Visual Exploration of a Large Spatio-temporal Dataset: Reflections on a Geovisualization Mashup.
+Hotmap: Looking at Geographic Attention
+VisLink: Revealing Relationships Amongst Visualizations
+Visualization of Heterogeneous Data
+Sequential Document Visualization
+A Taxonomy of Clutter Reduction for Information Visualisation
+Toward a Deeper Understanding of the Role of Interaction in Information Visualization
+Interactive Tree Comparison for Co-located Collaborative Information Visualization
+Browsing Zoomable Treemaps: Structure-Aware Multi-Scale Navigation Techniques
+Visualizing Causal Semantics Using Animations
+Spatialization Design: Comparing Points and Landscapes
+Weaving Versus Blending: a quantitative assessment of the information carrying capacities of two alternative methods for conveying multivariate data with color.
+Velocity-Aligned Discrete Oriented Polytopes for Dynamic Collision Detection
+Computing Length-Preserved Free Boundary for Quasi-Developable Mesh Segmentation
+Visual Methods for Analyzing Time-Oriented Data
+Impulse-Based Control of Joints and Muscles
+A Spreadsheet Approach to Facilitate Visualization of Uncertainty in Information
+Toward the Light Field Display: Autostereoscopic Rendering via a Cluster of Projectors
+Real-Time Adaptive Radiometric Compensation
+Volumetric Curved Planar Reformation for Virtual Endoscopy
+Promoting Insight-Based Evaluation of Visualizations: From Contest to Benchmark Repository
+Clip Art Rendering of Smooth Isosurfaces
+Hand Motion Prediction for Distributed Virtual Environments
+A Parallelized Surface Extraction Algorithm for Large Binary Image Data Sets Based on an Adaptive 3-D Delaunay Subdivision Strategy
+Psychologically Inspired Anticipation and Dynamic Response for Impacts to the Head and Upper Body
+Hierarchical Tensor Approximation of Multi-Dimensional Visual Data
+A Sharpness-Dependent Filter for Recovering Sharp Features in Repaired 3D Mesh Models
+On Linear Variational Surface Deformation Methods
+3D Modeling of Optically Challenging Objects
+Haptic Rendering of Dynamic Volumetric Data
+Geometric Texturing Using Level Sets
+An Evaluation of Prefiltered Reconstruction Schemes for Volume Rendering
+"Interactive, Internet Delivery of Visualization via Structured Prerendered Multiresolution Imagery"
+Triangular Springs for Modeling Nonlinear Membranes
+Anisotropic Noise Samples
+Computing Multiscale Curve and Surface Skeletons of Genus 0 Shapes Using a Global Importance Measure
+Generic Remeshing of 3D Triangular Meshes with Metric-Dependent Discrete Voronoi Diagrams
+Texture Mapping with Hard Constraints Using Warping Scheme
+Visual Perception and Mixed-Initiative Interaction for Assisted Visualization Design
+Filtering and Rendering of Resolution-Dependent Reflectance Models
+Mesh-Guided Optimized Retexturing for Image and Video
+A Generic Scheme for Progressive Point Cloud Coding
+Stylized Rendering Using Samples of a Painted Image
+Guest Editor   39;s Introduction: Special Section on Virtual Reality
+Advances in the Dynallax Solid-State Dynamic Parallax Barrier Autostereoscopic Visualization Display System
+Heads Up and Camera Down: A Vision-Based Tracking Modality for Mobile Mixed Reality
+Usability Engineering for Augmented Reality: Employing User-Based Studies to Inform Design
+Real-Time Path Planning in Dynamic Virtual Environments Using Multiagent Navigation Graphs
+Antialiasing Procedural Shaders with Reduction Maps
+"A Comparative Study of Desktop, Fishtank, and Cave Systems for the Exploration of Volume Rendered Confocal Data Sets"
+Least Square Projection: A Fast High-Precision Multidimensional Projection Technique and Its Application to Document Mapping
+Interactive View-Dependent Rendering over Networks
+A Statistical Approach to Volume Data Quality Assessment
+Interactive High-Resolution Isosurface Ray Casting on Multicore Processors
+Parallel Vectors Criteria for Unsteady Flow Vortices
+Chromium Renderserver: Scalable and Open Remote Rendering Infrastructure
+Silhouette Smoothing for Real-Time Rendering of Mesh Surfaces
+Mesh Composition on Models with Arbitrary Boundary Topology
+Diffusion Equations over Arbitrary Triangulated Surfaces for Filtering and Texture Applications
+Investigation of Smoothness-Increasing Accuracy-Conserving Filters for Improving Streamline Integration through Discontinuous Fields
+Shape Deformation Using a Skeleton to Drive Simplex Transformations
+Two-Character Motion Analysis and Synthesis
+Online Dynamic Graph Drawing
+Animation of Orthogonal Texture Patterns for Vector Field Visualization
+Persuading Visual Attention through Geometry
+Rigid Body Cable for Virtual Environments
+Two-Way Coupled SPH and Particle Level Set Fluid Simulation
+Globally Optimal Surface Mapping for Surfaces with Arbitrary Topology
+Output-Sensitive 3D Line Integral Convolution
+Scientific Sketching for Collaborative VR Visualization Design
+Efficient Morse Decompositions of Vector Fields
+Reconstruction of Cellular Biological Structures from Optical Microscopy Data
+Using Visual Design Experts in Critique-Based Evaluation of 2D Vector Visualization Methods
+Action-Based Multifield Video Visualization
+GrouseFlocks: Steerable Exploration of Graph Hierarchy Space
+Interactive Rendering of Dynamic Geometry
+Curve-Skeleton Extraction Using Iterative Least Squares Optimization
+A High-Quality High-Fidelity Visualization of the September 11 Attack on the World Trade Center
+Adaptive Geometry Image
+The Impact of a Character Posture Model on the Communication of Affect in an Immersive Virtual Environment
+Dual Poisson-Disk Tiling: An Efficient Method for Distributing Features on Arbitrary Surfaces
+Interactive Entity Resolution in Relational Data: A Visual Analytic Tool and Its Evaluation
+Perceptually Guided Polygon Reduction
+Discrete Surface Ricci Flow
+Identifying White-Matter Fiber Bundles in DTI Data Using an Automated Proximity-Based Fiber-Clustering Method
+Optimal Surface Parameterization Using Inverse Curvature Map
+Flow Charts: Visualization of Vector Fields on Arbitrary Surfaces
+Dynamic Visualization of Coexpression in Systems Genetics Data
+A Taxonomy of 3D Occlusion Management for Visualization
+Visualization of Particle Interactions in Granular Media
+High-Quality Rendering of Quartic Spline Surfaces on the GPU
+Rolling the Dice: Multidimensional Visual Exploration using Scatterplot Matrix Navigation
+A Framework of Interaction Costs in Information Visualization
+Balloon Focus: a Seamless Multi-Focus+Context Method for Treemaps
+Multi-Focused Geospatial Analysis Using Probes
+Distributed Cognition as a Theoretical Framework for Information Visualization
+EMDialog: Bringing Information Visualization into the Museum
+"Graphical Histories for Visualization: Supporting Analysis, Communication, and Evaluation"
+Who Votes For What A Visual Query Language for Opinion Data
+VisGets: Coordinated Visualizations for Web-based Information Exploration and Discovery
+Vispedia: Interactive Visual Exploration of Wikipedia Data via Search-Based Integration
+"The Word Tree, an Interactive Visual Concordance"
+HiPP: A Novel Hierarchical Point Placement Strategy and its Application to the Exploration of Document Collections
+Particle-based labeling: Fast point-feature labeling without obscuring other visual features
+Stacked Graphs    x02013; Geometry  amp; Aesthetics
+Cerebral: Visualizing Multiple Experimental Conditions on a Graph with Biological Context
+The Shaping of Information by Visual Metaphors
+Viz-A-Vis: Toward Visualizing Video through Computer Vision
+Geometry-Based Edge Clustering for Graph Visualization
+On the Visualization of Social and other Scale-Free Networks
+Exploration of Networks using overview+detail with Constraint-based cooperative layout
+Rapid Graph Layout Using Space Filling Curves
+Evaluating the Use of Data Transformation for Information Visualization
+Improving the Readability of Clustered Social Networks using Node Duplication
+Effectiveness of Animation in Trend Visualization
+Real-Time Tracking of Visually Attended Objects in Virtual Environments and Its Application to LOD
+Depth-Fused 3D Imagery on an Immaterial Display
+Interactive Navigation of Heterogeneous Agents Using Adaptive Roadmaps
+Hierarchical Photon Mapping
+Flow-Based Image Abstraction
+Illustration-Inspired Depth Enhanced Volumetric Medical Visualization
+An Overview of 3D Software Visualization
+Asymmetric Tensor Analysis for Flow Visualization
+Multiscale Time Activity Data Exploration via Temporal Clustering Visualization Spreadsheet
+"Calibration, Registration, and Synchronization for High Precision Augmented Reality Haptics"
+Edge Transformations for Improving Mesh Quality of Marching Cubes
+Random Accessible Mesh Compression Using Mesh Chartification
+An Evaluation of Graphical Context as a Means for Ameliorating the Effects of Registration Error
+Comprehensible Visualization for Augmented Reality
+Survey of the Visual Exploration and Analysis of Perfusion Data
+Visualization and Computer Graphics on Isotropically Emissive Volumetric Displays
+GeoBuilder: A Geometric Algorithm Visualization and Debugging System for 2D and 3D Geometric Computing
+Glimmer: Multilevel MDS on the GPU
+Compressed Facade Displacement Maps
+A High Capacity 3D Steganography Algorithm
+A New Watermarking Method for 3D Models Based on Integral Invariants
+RGB Subdivision
+Continuous Collision Detection for Ellipsoids
+Cosserat Nets
+"Robust High-Resolution Cloth Using Parallelism, History-Based Collisions, and Accurate Friction"
+Multithreaded Hybrid Feature Tracking for Markerless Augmented Reality
+"Mixed Reality Humans: Evaluating Behavior, Usability, and Acceptability"
+Evaluation of Reorientation Techniques and Distractors for Walking in Large Virtual Environments
+Semiautomatic Transfer Function Initialization for Abdominal Visualization Using Self-Generating Hierarchical Radial Basis Function Networks
+A Novel Visualization Technique for Electric Power Grid Analytics
+Equalizer: A Scalable Parallel Rendering Framework
+Real-Time Depth-of-Field Rendering Using Anisotropically Filtered Mipmap Interpolation
+An Adaptive Correspondence Algorithm for Modeling Scenes with Strong Interreflections
+Indexing and Retrieving Motions of Characters in Close Contact
+Direct Forcing for Lagrangian Rigid-Fluid Coupling
+Computing Teichmuller Shape Space
+Quasi-Developable Mesh Surface Interpolation via Mesh Deformation
+Performing Efficient NURBS Modeling Operations on the GPU
+ICCD: Interactive Continuous Collision Detection between Deformable Models Using Connectivity-Based Culling
+Surface Mapping Using Consistent Pants Decomposition
+Bandwidth Selection and Reconstruction Quality in Point-Based Surfaces
+A Minimal Contouring Approach to the Computation of the Reeb Graph
+An Efficient Solution to Systems of Multivariate Polynomial Using Expression Trees
+A Compute Unified System Architecture for Graphics Clusters Incorporating Data Locality
+Vectorizing Cartoon Animations
+The Lattice-Boltzmann Method on Optimal Sampling Lattices
+Bas-Relief Generation Using Adaptive Histogram Equalization
+Photorealistic Large-Scale Urban City Model Reconstruction
+Hardware Accelerated Segmentation of Complex Volumetric Filament Networks
+Using PVsolve to Analyze and Locate Positions of Parallel Vectors
+An Evaluation of Space Time Cube Representation of Spatiotemporal Patterns
+Case Study on Visualizing Hurricanes Using Illustration-Inspired Techniques
+Planetary-Scale Terrain Composition
+Distribution-Driven Visualization of Volume Data
+Enhancing Realism of Wet Surfaces in Temporal Bone Surgical Simulation
+A Survey of Radial Methods for Information Visualization
+Uncluttering Graph Layouts Using Anisotropic Diffusion and Mass Transport
+Efficient and Accurate Sound Propagation Using Adaptive Rectangular Decomposition
+Efficient LBM Visual Simulation on Face-Centered Cubic Lattices
+Image-Based Modeling of the Human Eye
+Refilming with Depth-Inferred Videos
+TransCAIP: A Live 3D TV System Using a Camera Array and an Integral Photography Display with Interactive Control of Viewing Parameters
+Multiresolution Mean Shift Clustering Algorithm for Shape Interpolation
+Compatible Embedding for 2D Shape Animation
+ABySS-Explorer: Visualizing Genome Sequence Assemblies
+Constructing Overview + Detail Dendrogram-Matrix Views
+MizBee: A Multiscale Synteny Browser
+GeneShelf: A Web-based Visual Interface for Large Gene Expression Time-Series Data Repositories
+Spatiotemporal Analysis of Sensor Logs using Growth Ring Maps
+A Nested Model for Visualization Design and Validation
+Conjunctive Visual Forms
+Interaction Techniques for Selecting and Manipulating Subgraphs in Network Visualizations
+ActiviTree: Interactive Visual Exploration of Sequences in Event-Based Data Using Graph Similarity
+"   x0201C;Search, Show Context, Expand on Demand   x0201D;: Supporting Large Graph Exploration with Degree-of-Interest"
+A Comparison of User-Generated and Automatic Graph Layouts
+Smooth Graphs for Visual Exploration of Higher-Order State Transitions
+Configuring Hierarchical Layouts to Address Research Questions
+Visualizing Social Photos on a Hasse Diagram for Eliciting Relations and Indexing New Photos
+Interactive Dimensionality Reduction Through User-defined Combinations of Quality Metrics
+Scattering Points in Parallel Coordinates
+Bubble Sets: Revealing Set Relations with Isocontours over Existing Visualizations
+FromDaDy: Spreading Aircraft Trajectories Across Views to Support Iterative Queries
+SellTrend: Inter-Attribute Visual Analysis of Temporal Transaction Data
+Comparing Dot and Landscape Spatializations for Visual Memory Differences
+Flow Mapping and Multivariate Visualization of Large Spatial Interaction Data
+"Temporal Summaries: Supporting Temporal Categorical Searching, Aggregation and Comparison"
+Opportunistic Tangible User Interfaces for Augmented Reality
+Estimation of Detection Thresholds for Redirected Walking Techniques
+A Programmable Display Layer for Virtual Reality System Architectures
+All-Frequency Lighting with Multiscale Spherical Radial Basis Functions
+High-Dynamic-Range Texture Compression for Rendering Systems of Different Capacities
+Fluid Simulation with Articulated Bodies
+Directable Weathering of Concave Rock Using Curvature Estimation
+Metric-Driven RoSy Field Design and Remeshing
+Crease Surfaces: From Theory to Extraction and Application to Diffusion Tensor MRI
+Tiled++: An Enhanced Tiled Hi-Res Display Wall
+The Medical Exploration Toolkit: An Efficient Support for Visual Computing in Surgical Planning and Training
+Virtual Rheoscopic Fluids
+Visualizing the Semantic Structure in Classical Music Works
+Principles and Tools for Collaborative Entity-Based Intelligence Analysis
+Cross-Filtered Views for Multidimensional Visual Analysis
+A Visual Analytics Approach to Understanding Spatiotemporal Hotspots
+Placegram: A Diagrammatic Map for Personal Geotagged Data Browsing
+Route Visualization Using Detail Lenses
+Analyzing and Tracking Burning Structures in Lean Premixed Hydrogen Flames
+Real-Time Ray Tracing of Implicit Surfaces on the GPU
+RACBVHs: Random-Accessible Compressed Bounding Volume Hierarchies
+Evolving Mazes from Images
+Origamizing Polyhedral Surfaces
+Robust Feature-Preserving Mesh Denoising Based on Consistent Subneighborhoods
+Real-Time Physics-Based 3D Biped Character Animation Using an Inverted Pendulum Model
+Meshless Helmholtz-Hodge Decomposition
+Errata to    x0201C;Isosurface Extraction and View-Dependent Filtering from Time-Varying Fields Using Persistent Time-Octree (PTOT)   x0201D; [Nov-Dec 09 1367-1374]
+Corrections to    x0201C;A Physiologically-Based Model for Simulation of Color Vision Deficiency   x0201C; [Nov-Dec 09 1291-1298]
+Real-Time Detection and Tracking for Augmented Reality on Mobile Phones
+Simulating Low-Cost Cameras for Augmented Reality Compositing
+A Novel Prototype for an Optical See-Through Head-Mounted Display with Addressable Focus Cues
+Real-Time Rendering Method and Performance Evaluation of Composable 3D Lenses for Interactive VR
+A Point-Cloud-Based Multiview Stereo Algorithm for Free-Viewpoint Video
+Texture Mapping via Optimal Mass Transport
+Yet Faster Ray-Triangle Intersection (Using SSE4)
+"Hierarchical Aggregation for Information Visualization: Overview, Techniques, and Design Guidelines"
+Representation-Independent In-Place Magnification with Sigma Lenses
+M   x0E9;lange: Space Folding for Visual Exploration
+Enhanced Voxelization and Representation of Objects with Sharp Details in Truncated Distance Fields
+An Evaluation of Prefiltered B-Spline Reconstruction for Quasi-Interpolation on the Body-Centered Cubic Lattice
+Scalable L-Infinite Coding of Meshes
+Subdivision Analysis of the Trilinear Interpolant
+Local Ambient Occlusion in Direct Volume Rendering
+Per-Pixel Opacity Modulation for Feature Enhancement in Volume Rendering
+Illustrative Volume Visualization Using GPU-Based Particle Systems
+Isodiamond Hierarchies: An Efficient Multiresolution Representation for Isosurfaces and Interval Volumes
+Fast construction of k-nearest neighbor graphs for point clouds
+"Visual Integration of Quantitative Proteomic Data, Pathways, and Protein Interactions"
+Almost Isometric Mesh Parameterization through Abstract Domains
+Markov Random Field Surface Reconstruction
+A Level Set Formulation of Geodesic Curvature Flow on Simplicial Surfaces
+Globally Optimized Linear Windowed Tone Mapping
+Modeling Repetitive Motions Using Structured Light
+Evaluation of the Cognitive Effects of Travel Technique in Complex Real and Virtual Environments
+Two Fast Methods for High-Quality Line Visibility
+Parallel View-Dependent Level-of-Detail Control
+Interactive Indirect Illumination Using Adaptive Multiresolution Splatting
+Real-Time Creased Approximate Subdivision Surfaces with Displacements
+Real-Time Volume-Based Ambient Occlusion
+Sample-Based Surface Coloring
+The General Pinhole Camera: Effective and Efficient Nonuniform Sampling for Visualization
+Topology-Aware Evenly Spaced Streamline Placement
+"Smooth, Volume-Accurate Material Interface Reconstruction"
+Comparative Visualization for Parameter Studies of Dataset Series
+Using Cognitive Fit Theory to Evaluate the Effectiveness of Information Visualizations: An Example Using Quality Assurance Data
+Active Shape Modeling with Electric Flows
+Example-Based Human Motion Denoising
+Necklace Maps
+Rethinking Map Legends with Visualization
+SignalLens: Focus+Context Applied to Electronic Time Series
+MulteeSum: A Tool for Comparative Spatial and Temporal Gene Expression Data
+Gremlin: An Interactive Visualization Model for Analyzing Genomic Rearrangements
+Graphical Perception of Multiple Time Series
+Uncovering Strengths and Weaknesses of Radial Visualizations---an Empirical Approach
+How Information Visualization Novices Construct Visualizations
+eSeeTrack amp;  8212;Visualizing Sequential Fixation Patterns
+Evaluating the impact of task demands and block resolution on the effectiveness of pixel-based visualization
+Graphical inference for infovis
+Matching Visual Saliency to Confidence in Plots of Uncertain Data
+Perceptual Guidelines for Creating Rectangular Treemaps
+"Mental Models, Visual Reasoning and Interaction in Information Visualization: A Top-down Perspective"
+Laws of Attraction: From Perceptual Forces to Conceptual Similarity
+Pargnostics: Screen-Space Metrics for Parallel Coordinates
+JanusVF: Accurate Navigation Using SCAAT and Virtual Fiducials
+An Immersive Virtual Peer for Studying Social Influences on Child Cyclists   39; Road-Crossing Behavior
+Virtualized Traffic: Reconstructing Traffic Flows from Discrete Spatiotemporal Data
+A Spatially Augmented Reality Sketching Interface for Architectural Daylighting Design
+Unicube for Dynamic Environment Mapping
+Radiance Transfer Biclustering for Real-Time All-Frequency Biscale Rendering
+Video Painting with Space-Time-Varying Style Parameters
+Inductively Generating Euler Diagrams
+Automatic Metro Map Layout Using Multicriteria Optimization
+Shape    x0201C;Break-and-Repair   x0201D; Strategy and Its Application to Automated Medical Image Segmentation
+GPU-Based Multilevel Clustering
+Parallel Iteration to the Radiative Transport in Inhomogeneous Media with Bootstrapping
+Efficient Rasterization for Outdoor Radio Wave Propagation
+Feature-Preserving Volume Data Reduction and Focus+Context Visualization
+Relation-Aware Isosurface Extraction in Multifield Data
+Visibility Histograms and Visibility-Driven Transfer Functions
+Spatial Generalization and Aggregation of Massive Movement Data
+A Perception Correlated Comparison Method for Dynamic Meshes
+Geometry Synthesis on Surfaces Using Field-Guided Shape Grammars
+Directing Crowd Simulations Using Navigation Fields
+The Effect on Lower Spine Muscle Activation of Walking on a Narrow Beam in Virtual Reality
+An Application of Multivariate Statistical Analysis for Query-Driven Visualization
+Tugging Graphs Faster: Efficiently Modifying Path-Preserving Hierarchies for Browsing Paths
+Hi-Trees and Their Layout
+A Comparison of Gradient Estimation Methods for Volume Rendering on Unstructured Meshes
+"CGLX: A Scalable, High-Performance Visualization Framework for Networked Display Environments"
+Correction of Clipped Pixels in Color Images
+GPU-Assisted Computation of Centroidal Voronoi Tessellation
+Interactive Mesh Cutting Using Constrained Random Walks
+Scan-Based Volume Animation Driven by Locally Adaptive Articulated Registrations
+Measurement-Based Modeling of Contact Forces and Textures for Haptic Rendering
+The Design Space of Implicit Hierarchy Visualization: A Survey
+Visualizing the Evolution and Interaction of Vortices and Shear Layers in Time-Dependent 3D Flow
+Toward High-Quality Gradient Estimation on Regular Lattices
+Forecasting Hotspots   x02014;A Predictive Analytics Approach
+Shape: A 3D Modeling Tool for Astrophysics
+Memory-Scalable GPU Spatial Hierarchy Construction
+Analyzing Visibility Configurations
+Compressive Rendering: A Rendering Application of Compressed Sensing
+Approximation of Loop Subdivision Surfaces for Fast Rendering
+Real-Time Resolution of Self-Intersection in Dynamic Cylindrical Free-Form Deformation
+Adaptive Motion Data Representation with Repeated Motion Analysis
+"Animation, Small Multiples, and the Effect of Mental Map Preservation in Dynamic Graphs"
+Iterative Integration of Visual Insights during Scalable Patent Search and Analysis
+How Can Visual Analytics Assist Investigative Analysis Design Implications from an Evaluation
+Automated Analytical Methods to Support Visual Exploration of High-Dimensional Data
+Point-Based Visualization for Large Hierarchies
+Drawing and Labeling High-Quality Metro Maps by Mixed-Integer Programming
+Spatioangular Prefiltering for Multiview 3D Displays
+MPML3D: Scripting Agents for the 3D Internet
+Data-Parallel Octrees for Surface Reconstruction
+Creature Control in a Fluid Environment
+Beautification of Design Sketches Using Trainable Stroke Clustering and Curve Fitting
+Model Synthesis: A General Procedural Modeling Algorithm
+GPU-Accelerated Minimum Distance and Clearance Queries
+Voronoi-Based Curvature and Feature Estimation from Point Clouds
+"Ball-Morph: Definition, Implementation, and Comparative Evaluation"
+Stable Feature Flow Fields
+Coherent Structures of Characteristic Curves in Symmetric Second Order Tensor Fields
+Color Lens: Adaptive Color Scale Optimization for Visual Exploration
+Automatic Generation of 3D Caricatures Based on Artistic Deformation Styles
+Orientation-Preserving Rod Elements for Real-Time Thin-Shell Simulation
+Approximate Boolean Operations on Large Polyhedral Solids with Partial Mesh Reconstruction
+Motion-Sensitive Anchor Identification of Least-Squares Meshes from Examples
+Closed-Loop Feedback Illumination for Optical Inverse Tone-Mapping in Light Microscopy
+Robust Relocalization and Its Evaluation for Online Environment Map Construction
+Natural Perspective Projections for Head-Mounted Displays
+A Wide-View Parallax-Free Eye-Mark Recorder with a Hyperboloidal Half-Silvered Mirror and Appearance-Based Gaze Estimation
+Visualization of the Static Aspects of Software: A Survey
+Interactive Visual Analysis of Heterogeneous Scientific Data across an Interface
+Interactive Visualization of Rotational Symmetry Fields on Surfaces
+Heterogeneous Subsurface Scattering Using the Finite Element Method
+"Hybrid, Multiresolution Wires with Massless Frictional Contacts"
+Interactive Shape Interpolation through Controllable Dynamic Deformation
+Real-Time Shape Illustration Using Laplacian Lines
+Link Conditions for Simplifying Meshes with Embedded Structures
+Drawing Euler Diagrams with Circles: The Theory of Piercings
+Stochastic Transparency
+Efficient Sparse Voxel Octrees
+Frankenrigs: Building Character Rigs from Multiple Sources
+Improving Shape Depiction under Arbitrary Rendering
+Improving Gabor Noise
+Representativity for Robust and Adaptive Multiple Importance Sampling
+Fast Exact Nearest Patch Matching for Patch-Based Image Editing and Processing
+Efficient Edit Propagation Using Hierarchical Data Structure
+Hierarchical Line Integration
+Sort-First Parallel Volume Rendering
+Template-Based 3D Model Fitting Using Dual-Domain Relaxation
+Natural Interaction Metaphors for Functional Validations of Virtual Car Models
+Autocalibrating Tiled Projectors on Piecewise Smooth Vertically Extruded Surfaces
+Change Blindness Phenomena for Virtual Reality Display Systems
+Sound Synthesis and Evaluation of Interactive Footsteps and Environmental Sounds Rendering for Virtual Reality Applications
+Effects of Viewing Conditions and Rotation Methods in a Collaborative Tabletop AR Environment
+Single-Pass Composable 3D Lens Rendering and Spatiotemporal 3D Lenses
+CG2Real: Improving the Realism of Computer Generated Images Using a Large Collection of Photographs
+A Memory-Efficient Unified Early Z-Test
+Skeleton Cuts   x02014;An Efficient Segmentation Method for Volume Rendering
+Interactive Exploration and Analysis of Large-Scale Simulations Using Topology-Based Data Segmentation
+EL-REP: A New 2D Geometric Decomposition Scheme and Its Applications
+Ordered Boolean List (OBL): Reducing the Footprint for Evaluating Boolean Expressions
+Exploring the Benefits of Augmented Reality Documentation for Maintenance and Repair
+Shape Recognition and Pose Estimation for Mobile Augmented Reality
+Cross-Organizational Collaboration Supported by Augmented Reality
+Positional Uncertainty of Isocontours: Condition Analysis and Probabilistic Measures
+Fused DTI/HARDI Visualization
+Fast Combinatorial Vector Field Topology
+"Whisper, Don   39;t Scream: Grids and Transparency"
+Relighting Photographs of Tree Canopies
+Motion Imitation with a Handheld Camera
+A User-Assisted Approach to Visualizing Multidimensional Images
+Spatiotemporal Sampling of Dynamic Environment Sequences
+Automatic Construction of Quad-Based Subdivision Surfaces Using Fitmaps
+Bilateral Normal Filtering for Mesh Denoising
+Partwise Cross-Parameterization via Nonregular Convex Hull Domains
+Visualization of High-Dimensional Point Clouds Using Their Density Distribution   39;s Topology
+Efficient Volume Exploration Using the Gaussian Mixture Model
+Physically-Based Interactive Flow Visualization Based on Schlieren and Interferometry Experimental Techniques
+"Visual Analysis of Large Graphs Using (X,Y)-Clustering and Hybrid Visualizations"
+Drawing Contour Trees in the Plane
+Lagrangian Texture Advection: Preserving both Spectrum and Velocity Field
+Sketch-Based Image Retrieval: Benchmark and Bag-of-Features Descriptors
+Supervised Manifold Distance Segmentation
+Sketching of Mirror-Symmetric Shapes
+A Hexahedral Multigrid Approach for Simulating Cuts in Deformable Objects
+Learning a 3D Human Pose Distance Metric from Geometric Pose Descriptor
+Autostereoscopic 3D Display with Long Visualization Depth Using Referential Viewing Area-Based Integral Photography
+Streamline Integration Using MPI-Hybrid Parallelism on a Large Multicore Architecture
+Six Degrees-of-Freedom Haptic Interaction with Fluids
+Extended Keyframe Detection with Stable Tracking for Multiple 3D Object Tracking
+Saliency-Assisted Navigation of Very Large Landscape Images
+Hierarchical Event Selection for Video Storyboards with a Case Study on Snooker Video Visualization
+Artificial Defocus for Displaying Markers in Microscopy Z-Stacks
+Visualization of Topological Structures in Area-Preserving Maps
+Multi-Touch Table System for Medical Visualization: Application to Orthopedic Surgery Planning
+Load-Balanced Parallel Streamline Generation on Large Scale Vector Fields
+Extinction-Based Shading and Illumination in GPU Volume Ray-Casting
+GPU-Based Interactive Cut-Surface Extraction From High-Order Finite Element Fields
+GPU-based Real-Time Approximation of the Ablation Zone for Radiofrequency Ablation
+Feature-Based Statistical Analysis of Combustion Simulation Data
+Quasi Interpolation With Voronoi Splines
+Topological Spines: A Structure-preserving Visual Representation of Scalar Fields
+Towards Robust Topology of Sparsely Sampled Data
+Nodes on Ropes: A Comprehensive Data and Control Flow for Steering Ensemble Simulations
+"Interactive, Graph-based Visual Analysis of High-dimensional, Multi-parameter Fluorescence Microscopy Data in Toponomics"
+Raytracing Dynamic Scenes on the GPU Using Grids
+"Hybrid Parallelism for Volume Rendering on Large-, Multi-, and Many-Core Systems"
+Drawing-Based Procedural Modeling of Chinese Architectures
+Shape Measures for Triangles
+Fast Construction of SAH BVHs on the Intel Many Integrated Core (MIC) Architecture
+Video Painting Based on a Stabilized Time-Varying Flow Field
+A Framework for 3D Model-Based Visual Tracking Using a GPU-Accelerated Particle Filter
+"Graph Drawing Aesthetics   x02014;Created by Users, Not Algorithms"
+EventRiver: Visually Exploring Text Collections with Temporal References
+Visual Reasoning about Social Networks Using Centrality Sensitivity
+Modified Dendrogram of Attribute Space for Multidimensional Transfer Function Design
+Automated Illustration of Molecular Flexibility
+Output-Sensitive Construction of Reeb Graphs
+The Topological Effects of Smoothing
+Restoration of Brick and Stone Relief from Single Rubbing Images
+Visualizing Nonmanifold and Singular Implicit Surfaces with Point Clouds
+Interactive Image Segmentation Based on Level Sets of Probabilities
+A Neuron Membrane Mesh Representation for Visualization of Electrophysiological Simulations
+Cubical Mass-Spring Model Design Based on a Tensile Deformation Test and Nonlinear Material Model
+A Survey of Nonlinear Prefiltering Methods for Efficient and Accurate Surface Shading
+Direct-to-Indirect Acoustic Radiance Transfer
+On Mesh-Free Valley Surface Extraction with Application to Low Frequency Sound Simulation
+Mesh-Driven Vector Field Clustering and Visualization: An Image-Based Approach
+Interactive Curvilinear Reformatting in Native Space
+Data Visualization Optimization via Computational Modeling of Perception
+Exact and Approximate Area-Proportional Circular Venn and Euler Diagrams
+DVV: A Taxonomy for Mixed Reality Visualization in Image Guided Surgery
+Design and Application of Real-Time Visual Attention Model for the Exploration of 3D Virtual Environments
+Integrality and Separability of Multitouch Interaction Techniques in 3D Manipulation Tasks
+Autocalibration of Multiprojector CAVE-Like Immersive Environments
+Simulating and Evaluating the Local Behavior of Small Pedestrian Groups
+Time-Varying Data Visualization Using Functional Representations
+"Automated Construction of Low-Resolution, Texture-Mapped, Class-Optimal Meshes"
+Efficient Visibility Encoding for Dynamic Illumination in Direct Volume Rendering
+Flow-Based Local Optimization for Image-to-Geometry Projection
+AniPaint: Interactive Painterly Animation from Video
+The Squash-and-Stretch Stylization for Character Motions
+Example-Based Automatic Music-Driven Conventional Dance Motion Synthesis
+Constraint Fluids
+On Delay Adjustment for Dynamic Load Balancing in Distributed Virtual Environments
+Redirecting Walking and Driving for Natural Navigation in Immersive Virtual Environments
+Walking in a Cube: Novel Metaphors for Safely Navigating Large Virtual Environments in Restricted Real Workspaces
+Impossible Spaces: Maximizing Natural Walking in Virtual Environments with Self-Overlapping Architecture
+Extended Overview Techniques for Outdoor Augmented Reality
+Online Tracking of Outdoor Lighting Variations for Augmented Reality with Moving Cameras
+The Right View from the Wrong Location: Depth Perception in Stereoscopic Multi-User Virtual Environments
+Geometric Calibration of Head-Mounted Displays and its Effects on Distance Estimation
+Effects of Immersion on Visual Analysis of Volume Data
+Effective Replays and Summarization of Virtual Experiences
+Haptic Palpation for Medical Simulation in Virtual Environments
+Evaluating Display Fidelity and Interaction Fidelity in a Virtual Reality Game
+Dense and Dynamic 3D Selection for Game-Based Virtual Environments
+Scanning 3D Full Human Bodies Using Kinects
+Interactive 3D Model Acquisition and Tracking of Building Block Structures
+Visual Readability Analysis: How to Make Your Writings Easier to Read
+Identifying Place Histories from Activity Traces with an Eye to Parameter Impact
+Co-Located Collaborative Visual Analytics around a Tabletop Display
+Restricted Trivariate Polycube Splines for Volumetric Data Modeling
+Maintaining Large Time Steps in Explicit Finite Element Simulations Using Shape Matching
+Human Motion Retrieval from Hand-Drawn Sketch
+Simulating Multiple Character Interactions with Collaborative and Adversarial Goals
+Direct Isosurface Visualization of Hex-Based High-Order Geometry and Attribute Representations
+Morse Set Classification and Hierarchical Refinement Using Conley Index
+A 2D Flow Visualization User Study Using Explicit Flow Synthesis and Implicit Task Design
+A Space-Filling Visualization Technique for Multivariate Small-World Graphs
+Ambiguity-Free Edge-Bundling for Interactive Graph Visualization
+Design and Evaluation of MagnetViz amp;  x2014;A Graph Visualization Tool
+ISP: An Optimal Out-of-Core Image-Set Processing Streaming Architecture for Parallel Heterogeneous Systems
+Parallel Computational Steering for HPC Applications Using HDF5 Files in Distributed Shared Memory
+Hexagonal Global Parameterization of Arbitrary Surfaces
+Efficiently Computing Exact Geodesic Loops within Finite Steps
+Transforming GIS Data into Functional Road Models for Large-Scale Traffic Simulation
+Region-Based Line Field Design Using Harmonic Functions
+Efficient and Flexible Sampling with Blue Noise Properties of Triangular Meshes
+A Versatile Optical Model for Hybrid Rendering of Volume Data
+Robust Morse Decompositions of Piecewise Constant Vector Fields
+Topology Verification for Isosurface Extraction
+Analysis of Time-Dependent Flow-Sensitive PC-MRI Data
+Exploring Brain Connectivity with Two-Dimensional Neural Maps
+Conceptual Recurrence Plots: Revealing Patterns in Human Discourse
+Model-Driven Design for the Visual Analysis of Heterogeneous Data
+Modeling Object Pursuit for Desktop Virtual Reality
+Interactive Visibility Retargeting in VR Using Conformal Visualization
+Velocity-Dependent Dynamic Curvature Gain for Redirected Walking
+The Design and Evaluation of a Large-Scale Real-Walking Locomotion Interface
+Tuning Self-Motion Perception in Virtual Reality with Visual Illusions
+Video Stereolization: Combining Motion Analysis with User Interaction
+Wellformedness Properties in Euler Diagrams: Which Should Be Used
+Real-Time Evaluation and Visualization of Learner Performance in a Mixed-Reality Environment for Clinical Breast Examination
+An RBF-Based Reparameterization Method for Constrained Texture Mapping
+Mesh Segmentation with Concavity-Aware Fields
+Adaptive Synthesis of Distance Fields
+Simple Culling Methods for Continuous Collision Detection of Deforming Triangles
+EXCOL: An EXtract-and-COmplete Layering Approach to Cartoon Animation Reusing
+Attention and Visual Memory in Visualization and Computer Graphics
+A Multigrid Fluid Pressure Solver Handling Separating Solid Boundary Conditions
+Preserving Fluid Sheets with Adaptively Sampled Anisotropic Particles
+Detail-Preserving Controllable Deformation from Sparse Examples
+Physics-Based Character Skinning Using Multidomain Subspace Deformations
+Robust Interactive Collision Handling between Tools and Thin Volumetric Objects
+Inference-Based Surface Reconstruction of Cluttered Environments
+Robust Dense Registration of Partial Nonrigid Shapes
+A Deformable Surface Model for Real-Time Water Drop Animation
+Spherical DCB-Spline Surfaces with Hierarchical and Adaptive Knot Insertion
+Dot Scissor: A Single-Click Interface for Mesh Segmentation
+A Survey of Visualization Systems for Network Security
+Coherent Time-Varying Graph Drawing with Multifocus+Context Interaction
+Using Aging to Visually Uncover Evolutionary Processes on Networks
+Hierarchical Streamline Bundles
+Interactive Computation and Rendering of Finite-Time Lyapunov Exponent Fields
+Flow Visualization with Quantified Spatial and Temporal Errors Using Edge Maps
+Scalable Multivariate Volume Visualization and Analysis Based on Dimension Projection and Parallel Coordinates
+WORDGRAPH: Keyword-in-Context Visualization for NETSPEAK   39;s Wildcard Search
+Visualizing Dynamic Data with Maps
+Combining Single and Packet-Ray Tracing for Arbitrary Ray Distributions on the Intel MIC Architecture
+Handling Motion-Blur in 3D Tracking and Rendering for Augmented Reality
+A Curvature-Adaptive Implicit Surface Reconstruction for Irregularly Spaced Points
+Uniform B-Spline Curve Interpolation with Prescribed Tangent and Curvature Vectors
+Baroclinic Turbulence with Varying Density and Temperature
+Social-Event-Driven Camera Control for Multicharacter Animations
+Facial Performance Transfer via Deformable Models and Parametric Correspondence
+Empirical Studies in Information Visualization: Seven Scenarios
+Simplification of Node Position Data ;for Interactive Visualization of Dynamic Data Sets
+Direct Feature Visualization Using Morse-Smale Complexes
+Efficient Computation of Combinatorial Feature Flow Fields
+Multimodal Data Fusion Based on Mutual Information
+Real-Time Rendering of Rough Refraction
+Real-Time GPU Surface Curvature Estimation on Deforming Meshes and Volumetric Data Sets
+"Interactive Slice WIM: Navigating and Interrogating Volume Data Sets Using a Multisurface, Multitouch VR Interface"
+Automatic Extraction of Manhattan-World Building Masses from 3D Laser Range Scans
+Analytic Solutions of Integral Moving Least Squares for Polygon Soups
+Interactive Quadrangulation with Reeb Atlases and Connectivity Textures
+A Triangulation-Invariant Method for Anisotropic Geodesic Map Computation on Surface Meshes
+Efficient Optimization of Common Base Domains for Cross Parameterization
+Point-Based Manifold Harmonics
+Enhancing the Symmetry and Proportion of 3D Face Geometry
+Design of 2D Time-Varying Vector Fields
+Feature-Driven Data Exploration for Volumetric Rendering
+Interest Driven Navigation in Visualization
+Parallel Computation of 2D Morse-Smale Complexes
+Fisheye Video Correction
+Variational Blue Noise Sampling
+Guided Multiview Ray Tracing for Fast Auralization
+Precomputed Safety Shapes for Efficient and Accurate Height-Field Rendering
+Rational BRDF
+Statistical Invariance for Texture Synthesis
+ImageAdmixture: Putting Together Dissimilar Objects from Groups
+A Subdivision-Based Representation for Vector Image Editing
+Video Snapshots: Creating High-Quality Images from Video Clips
+Global Optimization of Centroidal Voronoi Tessellation with Monte Carlo Approach
+Reconstructing the Curve-Skeletons of 3D Shapes Using the Visual Hull
+Live Speech Driven Head-and-Eye Motion Generators
+A Statistical Quality Model for Data-Driven Speech Animation
+Conformal Magnifier: A Focus+Context Technique with Local Shape Preservation
+Unified Boundary-Aware Texturing for Interactive Volume Rendering
+"Toward Visualization for Games: Theory, Design Space, and Patterns"
+3D Scatterplot Navigation
+A Sketching Interface for Sitting Pose Design in the Virtual Environment
+Evaluating the Role of Time in Investigative Analysis of Document Collections
+VisWeek 2012 Keynote Speaker
+VisWeek 2012 Capstone Speaker
+Computing Morse-Smale Complexes with Accurate Geometry
+Visualization of Temporal Similarity in Field Data
+Visualizing Nuclear Scission through a Multifield Extension of Topological Analysis
+KnotPad: Visualizing and Exploring Knot Theory with Fluid Reidemeister Moves
+Visualization of Electrostatic Dipoles in Molecular Dynamics of Metal Oxides
+Cumulative Heat Diffusion Using Volume Gradient Operator for Volume Analysis
+A Novel Approach to Visualizing Dark Matter Simulations
+Visual Data Analysis as an Integral Part of Environmental Management
+Evaluation of Fast-Forward Video Visualization
+Human Computation in Visualization: Using Purpose Driven Games for Robust Evaluation of Visualization Algorithms
+Evaluation of Multivariate Visualization on a Multivariate Task
+A Data-Driven Approach to Hue-Preserving Color-Blending
+Admissible Diffusion Wavelets and Their Applications in Space-Frequency Processing
+Efficient Boundary Extraction of BSP Solids Based on Clipping Operations
+Fast Sparse Level Sets on Graphics Hardware
+Linear Correlations between Spatial and Normal Noise in Triangle Meshes
+Image-Based Remodeling
+Lighting System for Visual Perception Enhancement in Volume Rendering
+Uncluttered Single-Image Visualization of Vascular Structures Using GPU and Integer Programming
+Abstracting Attribute Space for Transfer Function Exploration and Design
+Evaluation of Interactive Visualization on Mobile Computing Platforms for Selection of Deep Brain Stimulation Parameters
+Using Patterns to Encode Color Information for Dichromats
+Automated Box-Cox Transformations for Improved Visual Encoding
+Enhanced Spatial Stability with Hilbert and Moore Treemaps
+Animating Wrinkles by Example on Non-Skinned Cloth
+Visuo-Haptic Mixed Reality with Unobstructed Tool-Hand Integration
+View-Dependent Multiscale Fluid Simulation
+Energy Conservation for the Simulation of Deformable Bodies
+Real-Time Simulation of Brittle Fracture Using Modal Analysis
+Rich Intrinsic Image Decomposition of Outdoor Scenes from Multiple Views
+Double-Sided 2.5D Graphics
+Truthful Color Reproduction in Spatial Augmented Reality Applications
+Computing Reeb Graphs as a Union of Contour Trees
+Integrating Isosurface Statistics and Histograms
+ViSizer: A Visualization Resizing Framework
+TripAdvisor {N-D}: A Tourism-Inspired High-Dimensional Space Exploration Framework with Overview and Detail
+Reconstructing Open Surfaces via Graph-Cuts
+D-Snake: Image Registration by As-Similar-As-Possible Template Deformation
+Poisson Coordinates
+A Radial Structure Tensor and Its Use for Shape-Encoding Medical Visualization of Tubular and Nodular Structures
+A Survey of Visualization Pipelines
+A Time-Dependent Vector Field Topology Based on Streak Surfaces
+A Unified Approach to Streamline Selection and Viewpoint Selection for 3D Flow Visualization
+Designing Perspectively Correct Multiplanar Displays
+IDSS: A Novel Representation for Woven Fabrics
+LineAO amp;  x2014;Improved Three-Dimensional Line Rendering
+Perceptually-Based Depth-Ordering Enhancement for Direct Volume Rendering
+Semiregular Solid Texturing from 2D Image Exemplars
+TimeSeer: Scagnostics for High-Dimensional Time Series
+TransCut: Interactive Rendering of Translucent Cutouts
+Visualization and Visual Analysis of Multifaceted Scientific Data: A Survey
+Visualizing nD Point Clouds as Topological Landscape Profiles to Guide Local Data Analysis
+Comments on the    x0022;Meshless Helmholtz-Hodge Decomposition   x0022;
+Validation of the MR Simulation Approach for Evaluating the Effects of Immersion on Visual Analysis of Volume Data
+Applying Mixed Reality to Simulate Vulnerable Populations for Practicing Clinical Communication Skills
+The Effects of Visual Realism on Search Tasks in Mixed Reality Simulation
+Auditory Perception of Geometry-Invariant Material Properties
+Aural Proxies and Directionally-Varying Reverberation for Interactive Sound Propagation in Virtual Environments
+Reflective and Refractive Objects for Mixed Reality
+Human Tails: Ownership and Control of Extended Humanoid Avatars
+An Evaluation of Self-Avatar Eye Movement for Virtual Embodiment
+Drumming in Immersive Virtual Reality: The Body Shapes the Way We Play
+Smelling Screen: Development and Evaluation of an Olfactory Display System for Presenting a Virtual Odor Source
+Immersive Group-to-Group Telepresence
+Painting with Polygons: A Procedural Watercolor Engine
+Computing 2D Constrained Delaunay Triangulation Using the GPU
+Interactive Rendering of Acquired Materials on Dynamic Geometry Using Frequency Analysis
+Interactive Animation of 4D Performance Capture
+Analyzing Locomotion Synthesis with Feature-Based Motion Graphs
+Hierarchy of Stable Morse Decompositions
+Physics-Based Deformable Tongue Visualization
+PoseShop: Human Image Database Construction and Personalized Content Synthesis
+Smart Transparency for Illustrative Visualization of Complex Flow Surfaces
+Spring Level Sets: A Deformable Model Representation to Provide Interoperability between Meshes and Level Sets
+State of the    x0022;Art amp;  x201D;: A Taxonomy of Artistic Stylization Techniques for Images and Video
+"Studying the Effects of Stereo, Head Tracking, and Field of Regard on a Small-Scale Spatial Judgment Task"
+Visual Analysis of Cardiac 4D MRI Blood Flow Using Line Predicates
+Ambient Occlusion Effects for Combined Volumes and Tubular Geometry
+A Maxent-Stress Model for Graph Layout
+A Divide-and-Conquer Approach to Quad Remeshing
+CiSE: A Circular Spring Embedder Layout Algorithm
+Depth-Fighting Aware Methods for Multifragment Rendering
+Interpenetration Free Simulation of Thin Shell Rigid Bodies
+Multiverse Data-Flow Control
+Physically-Based Feature Tracking for CFD Data
+PIWI: Visually Exploring Graphs Based on Their Community Structure
+Understanding Visualization: A Formal Approach Using Category Theory and Semiotics
+Visual Analysis and Steering of Flooding Simulations
+Scalable Analysis of Movement Data for Extracting and Exploring Significant Places
+The Longitudinal Use of SaNDVis: Visual Social Network Analytics in the Enterprise
+How Visualization Layout Relates to Locus of Control and Other Personality Factors
+A Metric for the Evaluation of Dense Vector Field Visualizations
+Analytic Double Product Integrals for All-Frequency Relighting
+Generalized Anisotropic Stratified Surface Sampling
+Interactive Applications for Sketch-Based Editable Polycube Map
+Pairwise Harmonics for Shape Analysis
+Parallel Streamline Placement for 2D Flow Fields
+Registration of 3D Point Clouds and Meshes: A Survey from Rigid to Nonrigid
+Timeline Editing of Objects in Video
+Visualizing Natural Image Statistics
+Water Surface Modeling from a Single Viewpoint Video
+Abstract Art by Shape Classification
+Advanced Interactive Preintegrated Volume Rendering with a Power Series
+A Local Model of Light Interaction with Transparent Crystalline Media
+Changing Perspective in Stereoscopic Images
+Choking Loops on Surfaces
+Memory-Efficient Single-Pass GPU Rendering of Multifragment Effects
+Real-Time Volume Rendering in Dynamic Lighting Environments Using Precomputed Photon Mapping
+Representing Flow Patterns by Using Streamlines with Glyphs
+Similarity Measures for Enhancing Interactive Streamline Seeding
+Spatially and Temporally Optimized Video Stabilization
+Stack Zooming for Multifocus Interaction in Skewed-Aspect Visual Spaces
+StereoPasting: Interactive Composition in Stereoscopic Images
+The Helmholtz-Hodge Decomposition amp;  x2014;A Survey
+Trajectory Optimization for Full-Body Movements with Complex Contacts
+View Management of Projected Labels on Nonplanar and Textured Surfaces
+Bristle Maps: A Multivariate Abstraction Technique for Geovisualization
+Cosine-Weighted B-Spline Interpolation: A Fast and High-Quality Reconstruction Scheme for the Body-Centered Cubic Lattice
+Exploiting Connectivity to Improve the Tangential Part of Geometry Prediction
+Image-Space Texture-Based Output-Coherent Surface Flow Visualization
+Multiresolution Attributes for Hardware Tessellated Objects
+ParaGlide: Interactive Parameter Space Partitioning for Computer Simulations
+Scheduling in Heterogeneous Computing Environments for Proximity Queries
+Splatterplots: Overcoming Overdraw in Scatter Plots
+Surface Mesh to Volumetric Spline Conversion with Generalized Polycubes
+Virtual Try-On through Image-Based Rendering
+VisibilityCluster: Average Directional Visibility for Many-Light Rendering
+Visualization and Analysis of Vortex-Turbine Intersections in Wind Farms
+Wetting of Porous Solids
+Anisotropic Elliptic PDEs for Feature Classification
+A Spherical Gaussian Framework for Bayesian Monte Carlo Rendering of Glossy Surfaces
+Boundary-Aware Multidomain Subspace Deformation
+Combining Computational Analyses and Interactive Visualization for Document Exploration and Sensemaking in Jigsaw
+Compact Video Synopsis via Global Spatiotemporal Optimization
+Content-Aware Video Retargeting Using Object-Preserving Warping
+Cubic Gradient-Based Material Interfaces
+Flow Field Modulation
+Image-Based Modeling of Unwrappable Fa   x00E7;ades
+Octree Rasterization: Accelerating High-Quality Out-of-Core GPU Volume Rendering
+Perceptually Driven Visibility Optimization for Categorical Data Visualization
+Temporal Coherence in Image-Based Visual Hull Rendering
+The Generalized Sensitivity Scatterplot
+Anisotropic Sampling of Planar and Two-Manifold Domains for Texture Generation and Glyph Distribution
+Automatic Paper Sliceform Design from 3D Solid Models
+Change Blindness Images
+GosperMap: Using a Gosper Curve for Laying Out Hierarchical Data
+Hierarchical Reorganization of Dimensions in OLAP Visualizations
+KelpFusion: A Hybrid Set Visualization Technique
+Marker Optimization for Facial Motion Acquisition and Deformation
+Optimizing Constrained-Environment Redirected Walking Instructions Using Search Techniques
+SuperMatching: Feature Matching Using Supersymmetric Geometric Constraints
+The Five Ws for Information Visualization with Application to Healthcare Informatics
+The Sinogram Polygonizer for Reconstructing 3D Shapes
+Tiling Motion Patches
+Video-Based Crowd Synthesis
+Visualizing the Variability of Gradients in Uncertain 2D Scalar Fields
+VIS 2013 Capstone Speaker: Information Visualization: Challenges and Opportunities
+A Partition-Based Framework for Building and Validating Regression Models
+Decision Exploration Lab: A Visual Analytics Solution for Decision Management
+Vis4Heritage: Visual Analytics Approach on Grotto Wall Painting Degradations
+UTOPIAN: User-Driven Topic Modeling Based on Interactive Nonnegative Matrix Factorization
+HierarchicalTopics: Visually Exploring Large Text Collections Using Topic Hierarchies
+Visual Analysis of Topic Competition on Social Media
+ScatterBlogs2: Real-Time Monitoring of Microblog Messages through User-Guided Filtering
+Visual Analytics for Multimodal Social Network Analysis: A Design Study with Social Scientists
+Explainers: Expert Explorations with Crafted Projections
+Semantics of Directly Manipulating Spatializations
+Multiphase Flow of Immiscible Fluids on Unstructured Moving Meshes
+Mass-Conserving Eulerian Liquid Simulation
+Fast Collision Detection for Fracturing Rigid Bodies
+A Deformation Framework for Focus+Context Flow Visualization
+Drawing Area-Proportional Euler Diagrams Representing Up To Three Sets
+GPU-Based Volume Visualization from High-Order Finite Element Fields
+"Grouper: A Compact, Streamable Triangle Mesh Data Structure"
+Optimal Local Searching for Fast and Robust Textureless 3D Object Tracking in Highly Cluttered Backgrounds
+Summarization-Based Image Resizing by Intelligent Object Carving
+Text Readability in Head-Worn Displays: Color and Style Optimization in Video versus Optical See-Through Devices
+Verifying Volume Rendering Using Discretization Error Analysis
+A Whole Surface Approach to Crowd Simulation on Arbitrary Topologies
+Affine Arithmetic-Based B-Spline Surface Intersection with GPU Acceleration
+Content-Aware Photo Collage Using Circle Packing
+Feature-Based Analysis of Plasma-Based Particle Acceleration Data
+Interactive Formation Control in Complex Environments
+Lattice Cleaving: A Multimaterial Tetrahedral Meshing Algorithm with Guarantees
+Memory-Hazard-Aware K-Buffer Algorithm for Order-Independent Transparency Rendering
+Moving Least-Squares Reconstruction of Large Models with GPUs
+Personal Photograph Enhancement Using Internet Photo Collections
+Surface and contour-preserving origamic architecture paper pop-ups
+Turbulence Simulation by Adaptive Multi-Relaxation Lattice Boltzmann Modeling
+Vortical Inviscid Flows with Two-Way Solid-Fluid Coupling
+Erratum to    x0022;Video Painting Based on a Stabilized Time-Varying Flow Field   x0022;
+A Modular Degree-of-Interest Specification for the Visual Analysis of Large Dynamic Networks
+A Structure-Based Distance Metric for High-Dimensional Space Exploration with Multidimensional Scaling
+A Task Taxonomy for Network Evolution Analysis
+Activity Detection in Scientific Visualization
+An Evaluation of Depth Enhancing Perceptual Cues for Vascular Volume Visualization in Neurosurgery
+Attributes of Subtle Cues for Facilitating Visual Search in Augmented Reality
+FaceWarehouse: A 3D Facial Expression Database for Visual Computing
+Implicit Incompressible SPH
+Optimized Synthesis of Art Patterns and Layered Textures
+Scalable Collision Detection Using p-Partition Fronts on Many-Core Processors
+Similarity Preserving Snippet-Based Visualization of Web Search Results
+Three-Dimensional Mean-Shift Edge Bundling for the Visualization of Functional Connectivity in the Brain
+T-ReX: Interactive Global Illumination of Massive Models on Heterogeneous Computing Resources
+Source and Listener Directivity for Interactive Wave-Based Sound Propagation
+Effects of VR System Fidelity on Analyzing Isosurface Visualization of Volume Datasets
+Mixed Reality Virtual Pets to Reduce Childhood Obesity
+Global Localization from Monocular SLAM on a Mobile Phone
+Geometrically-Correct Projection-Based Texture Mapping onto a Deformable Object
+FlyAR: Augmented Reality Supported Micro Aerial Vehicle Navigation
+Establishing the Range of Perceptually Natural Visual Walking Speeds for Virtual Walking-In-Place Locomotion
+Performance of Redirected Walking Algorithms in a Constrained Virtual World
+Recalibration of Perceived Distance in Virtual Environments Occurs Rapidly and Transfers Asymmetrically Across Scale
+Dynamic Affordances in Embodied Interactive Systems: The Role of Display and Mode of Locomotion
+Feasibility of Training Athletes for High-Pressure Situations Using Virtual Reality
+Measuring Latency in Virtual Environments
+Effects of Virtual Human Animation on Emotion Contagion in Simulated Inter-Personal Experiences
+Getting the Point Across: Exploring the Effects of Dynamic Virtual Humans in an Interactive Museum Exhibit on User Perceptions
+Exchange of Avatars: Toward a Better Perception and Understanding
+Assessing the Ability of a VR-Based Assembly Task Simulation to Evaluate PhysicalRisk Factors
+Bas-Relief Modeling from Normal Images with Intuitive Styles
+Blood Flow Clustering and Applications inVirtual Stenting of Intracranial Aneurysms
+Chess Evolution Visualization
+Exact and Adaptive Signed Distance FieldsComputation for Rigid and DeformableModels on GPUs
+GazeVis: Interactive 3D Gaze Visualization for Contiguous Cross-Sectional Medical Images
+GraphDiaries: Animated Transitions andTemporal Navigation for Dynamic Networks
+Hierarchical and Controlled Advancement for   x00A0;Continuous Collision Detectionof Rigid and Articulated Models
+Hybrid Rendering with Scheduling under Uncertainty
+Importance-Driven Accessory Lights Designfor Enhancing Local Shapes
+Stroscope: Multi-Scale Visualization of Irregularly Measured Time-Series Data
+Improving the Efficiency of Viewpoint Composition
+Model Estimation and Selection towardsUnconstrained Real-Time Tracking and Mapping
+Kinectrack: 3D Pose Estimation Using a Projected Dense Dot Pattern
+Learning Optimized Local Difference Binaries for Scalable Augmented Reality on Mobile Devices
+High-Quality Real-Time Video Inpaintingwith PixMix
+Effects of Approximate Filtering on the Appearance of Bidirectional Texture Functions
+Exploring the Spectrum of Dynamic Scheduling Algorithms for Scalable Distributed-MemoryRay Tracing
+Importance Driven Environment Map Sampling
+Surface Meshing with Curvature Convergence
+The Perception of Visual UncertaintyRepresentation by Non-Experts
+Toward Evaluating the Usefulness of GlobalIllumination for Novices in Lighting Design Tasks
+WYSIWYG Stereo Paintingwith Usability Enhancements
+Interactive Mesostructures withVolumetric Collisions
+Property and Lighting Manipulations for Static Volume Stylization Using a Painting Metaphor
+Filtering Non-Linear TransferFunctions on Surfaces
+Translucent Radiosity: Efficiently CombiningDiffuse Inter-Reflection andSubsurface Scattering
+Hybrid Long-Range Collision Avoidance for Crowd Simulation
+ADAPT: The Agent Developmentand Prototyping Testbed
+"Large-Scale Overlays and Trends: Visually Mining, Panning and Zoomingthe Observable Universe"
+Shape Deformation via Interior RBF
+Structured Mechanical Collage
+Dynamic Network Visualization withExtended Massive Sequence Views
+Joint Contour Nets
+Ovis: A Framework for Visual Analysisof Ocean Forecast Ensembles
+A Graph-Based Interface for VisualAnalytics of 3D Streamlines and Pathlines
+Bundled Visualization of DynamicGraph and Trail Data
+A Survey of Software Frameworks for Cluster-Based Large High-Resolution Displays
+Cone Tracing for Furry Object Rendering
+Frame Field Singularity Correctionfor Automatic Hexahedralization
+Learning Layouts for Single-PageGraphic Designs
+Data-Driven Synthetic Modeling of Trees
+Direct Isosurface Ray Casting of NURBS-Based Isogeometric Analysis
+Drawing Road Networks with Mental Maps
+Efficient Structure-Aware Image Smoothingby Local Extrema on Space-Filling Curve
+Implicit Multibody Penalty-BasedDistributed Contact
+Large-Scale Point-Cloud Visualization through Localized Textured Surface Reconstruction
+Making Graphical Information Visible in Real Shadows on Interactive Tabletops
+Object Movements Synopsis viaPart Assembling and Stitching
+Second-Order Feed-Forward Renderingfor Specular and Glossy Reflections
+Volume Rendering of Curvilinear-Grid Data Using Low-Dimensional Deformation Textures
+Diverse Motions and Character Shapes for Simulated Skills
+Control of Rotational Dynamics for Ground and Aerial Behavior
+Geodesic Binding for Degenerate Character Geometry Using Sparse Voxelization
+Data-Driven Simulation of Detailed Surface Deformations for Surgery Training Simulators
+Exploring Flow Fields Using Space-Filling Analysis of Streamlines
+Large-Scale Liquid Simulation on Adaptive Hexahedral Grids
+Low-Resolution Remeshing Using the Localized Restricted Voronoi Diagram
+On View Consistency in Multi-Server Distributed Virtual Environments
+Overestimation and Underestimation Biases in Photon Mapping with Non-Constant Kernels
+Towards Photo Watercolorization with Artistic Verisimilitude
+Zometool Rationalization of Freeform Surfaces
+Animated Depth Images for Interactive Remote Visualization of Time-Varying Data Sets
+Detection and Reconstruction of an Implicit Boundary Surface by Adaptively Expanding A Small Surface Patch in a 3D Image
+Filling Your Shelves: Synthesizing Diverse Style-Preserving Artifact Arrangements
+Generating Facial Expressions Using an Anatomically Accurate Biomechanical Model
+How to Display Group Information on Node-Link Diagrams: An Evaluation
+Perceptually Uniform Motion Space
+Study of a Ray Casting Technique for the Visualization of Deformable Volumes
+The Natural Helmholtz-Hodge Decomposition for Open-Boundary Flow Analysis
+Unbiased Sampling and Meshing of Isosurfaces
+Visual Adjacency Lists for Dynamic Graphs
+Knowledge Generation Model for Visual Analytics
+INFUSE: Interactive Feature Selection for Predictive Modeling of High Dimensional Data
+Transforming Scagnostics to Reveal Hidden Features
+Supporting Communication and Coordination in Collaborative Sensemaking
+Opening the Black Box: Strategies for Increased User Involvement in Existing Algorithm Implementations
+Progressive Visual Analytics: User-Driven Visual Exploration of In-Progress Analytics
+Finding Waldo: Learning about Users from their Interactions
+An Approach to Supporting Incremental Visual Data Classification
+An Energy-Driven Motion Planning Method for Two Distant Postures
+Automated Aesthetic Analysis of Photographic Images
+Bi-Normal Filtering for Mesh Denoising
+Geometrically Consistent Stereoscopic Image Editing Using Patch-Based Synthesis
+Interpolation-Based Pathline Tracing in Particle-Based Flow Visualization
+Perception-Based Evaluation of Projection Methods for Multidimensional Data Visualization
+Planar Hexagonal Meshing for Architecture
+SimpliFly: A Methodology for Simplification and Thematic Enhancement of Trajectories
+The Impact of Interactivity on Comprehending 2D and 3D Visualizations of Movement Data
+Exploring Brushlet Based 3D Textures in Transfer Function Specification for Direct Volume Rendering of Abdominal Organs
+Image-Based Reverse Engineering and Visual Prototyping of Woven Cloth
+MegaMol   x2014;A Prototyping Framework for Particle-Based Visualization
+Munin: A Peer-to-Peer Middleware for Ubiquitous Analytics and Visualization Spaces
+Parallel Style-Aware Image Cloning for Artworks
+Position-Dependent Importance Sampling of Light Field Luminaires
+Progressive 3D Reconstruction of Planar-Faced Manifold Objects with DRF-Based Line Drawing Decomposition
+Smooth Rotation Enhanced As-Rigid-As-Possible Mesh Animation
+Space-Time Transfinite Interpolation of Volumetric Material Properties
+Visual Correlation Analysis of Numerical and Categorical Data on the Correlation Map

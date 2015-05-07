@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://getbootstrap.com/examples/jumbotron/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="stylesheet" type="text/css" href="css/parallel.css" />
+    <link rel="stylesheet" type="text/css" href="css/treemap.css" />  
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">LDA Explore</a>
+        </div>
+          
+        <div id="navbar" class="navbar-collapse collapse">
+            <div class="controls">
+                <form class="navbar-form navbar-right" role="search">
+                <button class="btn btn-xs"  title="Zoom in on selected data" id="keep-data" disabled="disabled">Keep</button>
+                <button class="btn btn-xs"  title="Remove selected data" id="exclude-data" disabled="disabled">Exclude</button>
+                <button class="btn btn-xs" title="Export data as CSV" id="export-data">Export</button>
+                  <strong id="rendered-count"></strong>/<strong id="selected-count"></strong>
+                  <div class="fillbar">
+                      <div id="selected-bar">
+                          <div id="rendered-bar">&nbsp;</div>
+                      </div>
+                  </div>
+
+                    Lines at <strong id="opacity"></strong> opacity.
+                    <span class="settings">
+                            <button class="btn btn-xs" id="hide-ticks">Hide Ticks</button>
+                            <button class="btn btn-xs" id="show-ticks" disabled="disabled">Show Ticks</button>
+                            <button class="btn btn-xs" id="dark-theme">Dark</button>
+                            <button class="btn btn-xs" id="light-theme" disabled="disabled">Light</button>
+                            <button class="btn btn-xs"><a href="./index8.html">Probability Mode </a></button>
+                            <button class="btn btn-xs"><a href="./index7.html">Reset </a></button>
+                    </span>
+                </form>
+            </div>
+    <div style="clear:both;"></div>
+        </div><!--/.navbar-collapse -->    
+      </div>
+    </nav>
+        
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+        
+  <div id="chart" style="margin-top: 50px !important">
+    <canvas id="background"></canvas>
+    <canvas id="foreground"></canvas>
+    <canvas id="highlight"></canvas>
+    <svg></svg>
+  </div>
+      
+     
+      
+    <div id="wrap" style="font-size: 12px !important">
+     <hr></hr>    
+        
+    <div class="thirdA" style="margin-top: 30px !important">
+        <p id="chart_tree">  
+    </div>  
+        
+    <div  class="thirdB">
+    </div>
+      
+    <div class="thirdC">
+      <h4 style="font-size: 15px !important">Search Documents on Top Words: <input type="text" id="search" placeholder="Search  for a Word..." class="form-control"></input></h4>
+      <p id="food-list">
+      </p>
+    </div>
+    </div>
+      
+    <!-- <div class="container">
+      
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="http://getbootstrap.com/examples/jumbotron/#" role="button">View details »</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>© Company 2014</p>
+      </footer>
+    </div> --><!-- /container -->
+
+      <script src="http://d3js.org/d3.v2.js"></script>
+        <script src="http://code.jquery.com/jquery-1.7.1.js"></script>
+        <script src="js/treemap.js"></script>
+        <script src="http://documentcloud.github.com/underscore/underscore.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>	
+        <script src="js/ranking_parallel.js"></script>
+      
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./bootstrap/jquery.min.js"></script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./bootstrap/ie10-viewport-bug-workaround.js"></script>
+  
+
+</body></html>
