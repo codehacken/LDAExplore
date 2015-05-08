@@ -4,45 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>LDA Explorer</title>
     <link rel="stylesheet" type="text/css" href="css/parallel.css" />
-          
-    <style type="text/css">
-
-text {
-  font-size: 11px;
-  pointer-events: none;
-}
-
-text.parent {
-  fill: #1f77b4;
-}
-
-circle {
-  fill: #ccc;
-  stroke: #999;
-  pointer-events: all;
-}
-
-circle.parent {
-  fill: #1f77b4;
-  fill-opacity: .1;
-  stroke: steelblue;
-}
-
-circle.parent:hover {
-  stroke: #ff7f0e;
-  stroke-width: .5px;
-}
-
-circle.child {
-  pointer-events: none;
-}
-
-    </style>
-      
   </head>
-  <body></body>      
-      
-  <div id="header" style="margin-top: 1500px;">
+  <body>
+  <div id="header">
     <h1>LDA Explorer</h1>
     <button title="Zoom in on selected data" id="keep-data" disabled="disabled">Keep</button>
     <button title="Remove selected data" id="exclude-data" disabled="disabled">Exclude</button>
@@ -67,7 +31,7 @@ circle.child {
     <svg></svg>
   </div>
   <div id="wrap">
-    <div class="thirdA" id="controls">
+    <!--<div class="thirdA" id="controls">
       <div class="bright">
         <h3>What is this?</h3>
         <p>
@@ -91,7 +55,7 @@ circle.child {
       <div class="little-box">
 
       </div>
-    </div>
+    </div>-->
     <div  class="thirdB">
       <small>
         <!--Last rendered <strong id="render-speed"></strong> lines-->
@@ -111,5 +75,5 @@ circle.child {
   <script src="http://documentcloud.github.com/underscore/underscore.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>	
-  <script src="js/parallel.js"></script>
+  <script src="js/ranking_parallel.js"></script>
 </html>

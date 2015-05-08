@@ -2,4 +2,7 @@
 *.idea
 *.project
 *.pydevproject
+*.#main.py
+.ropeproject/
+*.pyc
 

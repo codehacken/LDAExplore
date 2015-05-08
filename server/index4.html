@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://documentcloud.github.com/underscore/underscore.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>LDA Explorer</title>
+    <link rel="stylesheet" type="text/css" href="css/parallel.css" />
+	<link rel="stylesheet" type="text/css" href="css/treemap.css" />
+  </head>
+  <body>
+  <div id="header">
+    <h1>LDA Explorer</h1>
+    <button title="Zoom in on selected data" id="keep-data" disabled="disabled">Keep</button>
+    <button title="Remove selected data" id="exclude-data" disabled="disabled">Exclude</button>
+    <button title="Export data as CSV" id="export-data">Export</button>
+    <div class="controls">
+      <strong id="rendered-count"></strong>/<strong id="selected-count"></strong><!--<strong id="data-count"></strong>-->
+      <div class="fillbar"><div id="selected-bar"><div id="rendered-bar">&nbsp;</div></div></div>
+      Lines at <strong id="opacity"></strong> opacity.
+      <span class="settings">
+        <button id="hide-ticks">Hide Ticks</button>
+        <button id="show-ticks" disabled="disabled">Show Ticks</button>
+        <button id="dark-theme">Dark</button>
+        <button id="light-theme" disabled="disabled">Light</button>
+      </span>
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+  <div id="chart">
+	  <canvas id="background"></canvas>
+	  <canvas id="foreground"></canvas>
+	  <canvas id="highlight"></canvas>
+	  <svg></svg>
+  </div>
+  </div>
+  <div id="wrap">
+	  <div class="thirdA" id="controls">
+		  <p id="chart_tree"></p>
+		  <!--<div class="bright">
+			<h3>What is this?</h3>
+			<p>
+			  A multidimensional explorer of Topic Models results of LDA.</a>.
+			</p>
+			<p>
+			  The parallel coordinates displays each topic discovered by the output of the corpus of ducments pass into LDA.
+			</p>
+		  </div>
+
+		  <div class="little-box">
+			<h3>Controls</h3>
+			<p>
+			  <strong>Brush</strong>: Drag vertically along an axis.<br/>
+			  <strong>Remove Brush</strong>: Tap the axis background.<br/>
+			  <strong>Reorder Axes</strong>: Drag a label horizontally.<br/>
+			  <strong>Invert Axis</strong>: Tap an axis label.<br/>
+			  <strong>Remove Axis</strong>: Drag axis label to the left edge.<br/>
+			</p>
+		  </div>
+		  <div class="little-box">
+
+		  </div>-->
+    </div>
+     <div  class="thirdB">
+      <small>
+        <!--Last rendered <strong id="render-speed"></strong> lines-->
+      </small>
+      <h3>Documents: </h3>
+      <p id="legend" style="height:420px !important;">
+      </p>
+    </div>
+    <div class="thirdC">
+      <h3>Search Documents on Top Words: <input type="text" id="search" placeholder="Search  for a Word..."></input></h3>
+      <p id="food-list">
+      </p>
+    </div>
+  </div>
+  </body>
+  <!--<script src="http://code.jquery.com/jquery-1.7.1.js"></script>-->
+  <script src="js/parallel.js"></script>
+  <script src="js/treemap.js"></script>
+</html>
