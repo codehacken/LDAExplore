@@ -10,6 +10,7 @@ import operator
 import numpy  # for top_word re-rank
 import scipy  # for gmean
 
+
 class LDAVisualModel:
     def __init__(self, word_corpus, scaling_factor=100000):
         """
@@ -47,11 +48,13 @@ class LDAVisualModel:
                                    passes=num_pass, update_every=update_t,
                                    chunksize=chunks, iterations=num_iter,
                                    eval_every=num_eval, gamma_threshold=gamma_t,
-                                   decay=kappa, offset=tao, eta=eta)
+                                   decay=kappa, eta=eta)
         #(corpus=None, num_topics=100, id2word=None, distributed=False,
         # chunksize=2000, passes=1, update_every=1, alpha='symmetric',
         # eta=None, decay=0.5, offset=1.0, eval_every=10, iterations=50,
         # gamma_threshold=0.001)
+
+        #TODO: offset=tao, Removing the Offset parameter temporary. Restore when error resolved.
 
     def get_lda_corpus(self, num_of_topics=10, num_of_words=10):
         """

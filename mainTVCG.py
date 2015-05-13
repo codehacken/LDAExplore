@@ -103,9 +103,10 @@ if __name__ == "__main__":
     # and iterations.
     lda.train_lda(num_of_topics, para_alpha, num_of_passes, num_of_updates,
                   num_of_trunks, num_of_iterations, num_of_eval,
-                  para_gamma_t, para_kappa, para_tao, para_eta)  # id2token, lda.lda
+                  para_gamma_t, para_kappa, para_eta)  # id2token, lda.lda
         # Get lda.lda.expElogbeta: (matrix) num_topic * num_corpus_word
         # Get lda.id2word.id2token because we feed in lda.id2word when training
+        #TODO: para_tao has been removed from the 2nd last position temporarily. Add it back later.
 
 #   C-LDA
 #    must_link = tfidf_tokenizer.read_must_link(must_link_file)

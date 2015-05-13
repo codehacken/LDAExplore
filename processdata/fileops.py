@@ -163,6 +163,7 @@ class FileReader:
     def get_token_list(self):
         return self.token_list
 
+
 # This function is to writes to a CSV file.
 # The file contains the probability of each topic.
 def write_prob_to_file(doc_to_word, doc_top, num_of_words, num_topics, t_file, filename):
@@ -178,7 +179,7 @@ def write_prob_to_file(doc_to_word, doc_top, num_of_words, num_topics, t_file, f
     for idx, doc in enumerate(doc_top):
 
         # This is the name of the document.
-        doc_string = csvreader.__next__()[0]
+        doc_string = csvreader.next()[0]
 
         # Write the title to the document.
         col_string += "\"TITLE: " + doc_string + " WORDS: "
@@ -238,6 +239,7 @@ def write_top_hier_to_file(top_hier, filename):
     with open(filename, "w") as file_ptr:
         json.dump(top_hier, file_ptr)
 
+
 def write_top_word_to_file(top_word, filename, top_coherence, coherence, perplexity):
     write_string = "Coherence: %f  Perplexity: %f \n" % (coherence, perplexity)
 
@@ -249,6 +251,7 @@ def write_top_word_to_file(top_word, filename, top_coherence, coherence, perplex
 
     with open(filename, "w") as file_ptr:
         file_ptr.write(write_string)
+
 
 def write_top_word_matrix_to_file(word_dict, matrix, filename):
     write_string = ","
@@ -264,6 +267,7 @@ def write_top_word_matrix_to_file(word_dict, matrix, filename):
 
     with open(filename, "w") as file_ptr:
         file_ptr.write(write_string)
+
 
 def write_evaluation_matrix_to_file(coherences, perplexities, filename):
     write_string = ""
